@@ -1,0 +1,51 @@
+/* ------------Projects section---------- */
+
+#projects{
+    /* margin: 0px 0px; */
+    padding: 40px 0px 70px 0px;
+    background-color: var(--section-bg);
+}
+.projects-grid{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 12px 50px;
+}
+
+.projects-grid>article{
+    flex: 1 1 340px;
+    max-width: 600px;
+    padding: 18px;
+    /* border: 2px solid #ececf0; */
+    border-radius: var(--radius-md);
+    background-color: var(--bg);
+    outline: var(--border);
+    /* gap: 0.25rem; */
+    /* border-top: 10px solid black; */
+    /* box-shadow: 0 2px 10px rgba(0,0,0,0.1); */
+
+}
+
+.projects-grid article p{
+    /* color: #6a7282; */
+    /* color: #717182; */
+    color: var(--text-light);
+}
+
+
+/* ---------- media queries ------------ */
+
+
+
+@media (max-width: 768px) {
+
+  /* Projects */
+  .projects-grid {
+    padding: 30px;
+     /* flex: 1 1 100%; */
+    /* max-width: 80%; */
+  }
+
+}
+

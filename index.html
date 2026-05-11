@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio of Anjali Kumari, a Frontend developer skilled in HTML, CSS, JavaScript, React and modern web technologies.">
+    <meta name="author" content="Anjali Kumari">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- <link rel="stylesheet" href="responsive.css"> -->
+
+    <!-- Custom JS -->
+    <script src="js/script.js" defer></script>
+    <script src="js/theme.js" defer></script>
+    <!-- Add Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+
+    <title>Anjali Kumari | Frontend Developer👋</title>
+</head>
+
+<body>
+
+    <header id="header">
+        <!-- Logo -->
+        <div class="logo">
+            <a href="#" class="fs-5">
+                <span class="text-primary">&lt;</span>AK<span class="text-primary">/&gt;</span>
+            </a>
+        </div>
+
+        <!-- Hamburger -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                <li class="nav-item">
+
+                    <!-- Theme Toggle SVG -->
+                    <svg id="theme-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+
+                        <!-- Default Moon Icon -->
+                        <path d="M12 3a6 6 0 1 0 9 9 9 9 0 1 1-9-9"></path>
+
+                    </svg>
+
+                </li>
+                <li class="nav-item"><a href="#contact" class="btn btn-dark talk-btn">Let's Talk</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero">
+            <!-- Hero Text -->
+            <div class="hero-text">
+                <div class="main-text">
+                    <h1>Hi, I'm <span class="text-primary" id="typing"></span></h1>
+                </div>
+                <p class="title">
+                    <span class="text-primary fs-4">&lt</span><span class="text-primary fs-4">&gt</span> Frontend Developer <span
+                        class="text-primary fs-4">&lt</span><span class="text-primary fs-4">/&gt</span>
+                </p>
+                <p class="description">
+                    Building responsive web apps using React, JavaScript, and modern CSS.
+                    <br> Focused on clean UI, usability, and performance.
+                </p>
+            </div>
+            <!-- Hero Buttons -->
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-dark project-btn ">View My Work</a>
+                <a href="#contact" class="btn contact-btn">Contact Me</a>
+            </div>
+            <!-- Social Icons -->
+            <div class="icons">
+                <!-- GitHub -->
+                <div class="icon-item">
+                    <a href="https://github.com/akvr000" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-github w-6 h-6">
+                            <path
+                                d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+                            </path>
+                            <path d="M9 18c-4.51 2-5-2-7-2">
+                        </svg>
+                        <span class="sr-only">GitHub</span></a>
+                </div>
+
+                <!-- LinkedIn -->
+                <div class="icon-item">
+                    <a href="https://linkedin.com/in/akvr000" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-linkedin w-6 h-6">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                            </path>
+                            <rect width="4" height="12" x="2" y="9"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                        <span class="sr-only">linkedin</span>
+                    </a>
+                </div>
+                <!-- Email -->
+                <div class="icon-item">
+                    <a href="#contact" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-mail w-6 h-6">
+                            <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                        </svg>
+                        <span class="sr-only">Email</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Scroll Arrow -->
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="scroll-arrow">
+                    <path d="M12 5v14"></path>
+                    <path d="m19 12-7 7-7-7"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="about-me">
+                <h2>About Me</h2>
+                <p>A passionate developer dedicated to creating impactful solutions.</p>
+            </div>
+            <!-- About Grid -->
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>I’m a BCA graduate from IGNOU and a self-taught frontend developer passionate about building
+                        clean, responsive, and interactive web applications. I enjoy working with React, JavaScript, and
+                        modern CSS to turn ideas and designs into functional user interfaces.</p>
+                    <p>I focus on writing simple, reusable code and improving user experience through thoughtful UI
+                        design. I also enjoy converting Figma designs into fully responsive web pages and continuously
+                        improving how I build real-world frontend projects.
+                    </p>
+                    <p>Currently, I’m strengthening my skills through structured learning and personal projects, with a
+                        strong focus on frontend development best practices and modern workflows using Git and GitHub.
+                    </p>
+                    <p>I’m actively looking for a Frontend Development Internship where I can contribute to real
+                        projects, learn from experienced developers, and grow as a software engineer.</p>
+                </div>
+                <!-- About Info -->
+                <div class="about-info">
+                    <ul class="quick-facts">
+                        <li>
+                            <h2>Quick Facts</h2>
+                        </li>
+                        <li><span class="custom-blue fs-5 me-2 fw-bold">▹</span>BCA Graduate (IGNOU) – First Division
+                        </li>
+                        <li><span class="custom-blue fs-5 me-2 fw-bold">▹</span>Frontend Skills: React, JavaScript
+                            (ES6+), HTML5, CSS3</li>
+                        <li><span class="custom-blue fs-5 me-2 fw-bold">▹</span>Tools: Git, GitHub, Figma-to-Code
+                            Conversion, Responsive Design</li>
+                        <li><span class="custom-blue fs-5 me-2 fw-bold">▹</span>Current Goal: Seeking a Frontend
+                            Developer Internship</li>
+                        <li><span class="custom-blue fs-5 me-2 fw-bold">▹</span>Based in New Delhi, India </li>
+
+                        <!-- Download CV -->
+                        <li>
+                            <a class="btn btn-dark download-cv" href="assets/CV.pdf" target="_blank"
+                                rel="noopener noreferrer">Download CV</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <!-- Skills Grid -->
+            <div class="about-skills">
+                <h2>Skills & Technologies</h2>
+                <p>A comprehensive toolkit for building modern web applications</p>
+            </div>
+            <div>
+                <!-- Frontend -->
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Frontend</h3>
+                        <div class="skills-buttons">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript (ES6+)</span>
+                            <span>Responsive Design</span>
+                            <span>React</span>
+                            <span>Bootstrap</span>
+                        </div>
+                    </div>
+                    <!-- Tools -->
+                    <div class="skill-category">
+                        <h3>Tools</h3>
+                        <div class="skills-buttons">
+                            <span>Git</span>
+                            <span>GitHub</span>
+                            <span>VS Code</span>
+                            <span>Chrome DevTools</span>
+                        </div>
+                    </div>
+                    <!-- Others -->
+                    <div class="skill-category">
+                        <h3>Others</h3>
+                        <div class="skills-buttons">
+                            <span>Figma to Code (UI Implementation)</span>
+                            <span>API Integration (Basic)</span>
+                            <span>Debugging</span>
+                            <span>Problem Solving</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <!-- Projects Grid -->
+            <div class="about-project">
+                <h2>Featured Projects</h2>
+                <p>A showcase of my recent work demonstrating technical expertise and creative problem-solving</p>
+            </div>
+            <!-- Project Cards -->
+            <div class="projects-grid">
+                <article>
+                    <h4>Personal Portfolio Website</h4>
+                    <p>A responsive and modern personal portfolio built to showcase my skills, projects, and frontend
+                        development journey using clean UI and smooth design.</p>
+                    <div class="projects-skills-buttons">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript (ES6+)</span>
+                        <span>Bootstrap</span>
+                    </div>
+
+                    <!-- Project Buttons -->
+                    <div class="project-buttons">
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="code">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+                                </path>
+                                <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                            </svg>&nbsp;&nbsp; Code
+                        </a>
+
+
+                        <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="demo">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M15 3h6v6"></path>
+                                <path d="M10 14 21 3"></path>
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            </svg>&nbsp;&nbsp;Demo
+                        </a>
+                    </div>
+                </article>
+
+                <article>
+                    <h4>Task Management App</h4>
+                    <p>Collaborative task management tool with real-time updates, team collaboration features, and
+                        analytics dashboard.</p>
+                    <div class="projects-skills-buttons">
+                        <span>Next.js</span>
+                        <span>TypeScript</span>
+                        <span>MongoDB</span>
+                        <span>Socket.io</span>
+
+                    </div>
+                    <div class="project-buttons">
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="code">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+                                </path>
+                                <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                            </svg>&nbsp;&nbsp; Code
+                        </a>
+
+
+                        <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="demo">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M15 3h6v6"></path>
+                                <path d="M10 14 21 3"></path>
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            </svg>&nbsp;&nbsp;Demo
+                        </a>
+                    </div>
+                </article>
+                <article>
+                    <h4>Weather Dashboard</h4>
+                    <p>Interactive weather application with location-based forecasts, historical data visualization, and
+                        severe weather alerts.</p>
+                    <div class="projects-skills-buttons">
+                        <span>React</span>
+                        <span>Tailwind CSS</span>
+                        <span>Weather API</span>
+                        <span>Recharts</span>
+
+                    </div>
+                    <div class="project-buttons">
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="code">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+                                </path>
+                                <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                            </svg>&nbsp;&nbsp; Code
+                        </a>
+
+
+                        <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="demo">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M15 3h6v6"></path>
+                                <path d="M10 14 21 3"></path>
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            </svg>&nbsp;&nbsp;Demo
+                        </a>
+                    </div>
+                </article>
+                <!-- Add more projects as needed -->
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <!-- Contact Info -->
+            <div class="about-contact">
+                <h2>Get In Touch</h2>
+                <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your
+                    vision.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-methods">
+                        <h3>Contact Information</h3>
+                        <div class="contact-icons">
+                            <!-- GitHub -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                class="custom-blue fs-5 me-2 fw-bold contact-icon" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+                                </path>
+                                <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                            </svg>
+                            <span>GitHub</span>
+                            <p><a href="https://github.com/akvr000" target="_blank" rel="noopener noreferrer"
+                                    class="link">github.com/akvr000</a>
+                            </p>
+                        </div>
+                        <div class="contact-icons">
+                            <!-- LinkedIn -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="custom-blue fs-5 me-2 fw-bold contact-icon">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect width="4" height="12" x="2" y="9"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                            <span>LinkedIn</span>
+                            <p><a href="https://linkedin.com/in/akvr000" target="_blank" rel="noopener noreferrer"
+                                    class="link">linkedin.com/in/akvr000</a>
+                            </p>
+                        </div>
+
+                        <div class="contact-icons">
+                            <!-- Location -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="custom-blue fs-5 me-2 fw-bold contact-icon"
+                                width="20" height="24" viewBox="0 0 24 22" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+                                </path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <span>Location</span>
+                            <p>New Delhi, India</p>
+                        </div>
+                        <div class="p-3 rounded diaolog-box ">
+                            <p class="mb-0">
+                                <span class="fw-bold">Open to opportunities: </span>
+                                I'm currently looking for new challenges and opportunities to grow as a developer.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <form name="contact" method="POST" data-netlify="true">
+
+                        <input type="hidden" name="form-name" value="contact">
+
+                        <label for="name">Name</label>
+                        <input type="text" placeholder="Your name" name="name" id="name" autocomplete="name" required>
+
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="your.email@example.com"
+                            autocomplete="email" required>
+
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" rows="4" cols="35"
+                            placeholder="Write your message here..." required></textarea>
+
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+                <!-- Popup Message -->
+                <div id="popup-message" class="popup">
+                    Message sent successfully!
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="icons">
+            <div class="icon-item">
+                <!-- GitHub -->
+                <a href="https://github.com/akvr000" target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+                        </path>
+                        <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                    </svg>
+                    <span class="sr-only">GitHub</span></a>
+            </div>
+
+
+            <div class="icon-item">
+                <!-- LinkedIn -->
+                <a href="https://linkedin.com/in/akvr000" target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                        </path>
+                        <rect width="4" height="12" x="2" y="9"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                    <span class="sr-only">linkedin</span></a>
+
+            </div>
+            <div class="icon-item">
+                <!-- Twitter -->
+                <a href="https://twitter.com/akvr000" target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z">
+                        </path>
+                    </svg>
+                    <span class="sr-only">Twitter</span>
+                </a>
+            </div>
+            <div class="icon-item">
+                <!-- Email -->
+                <a href="#contact" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                    </svg>
+                    <span class="sr-only">Email</span></a>
+            </div>
+        </div>
+        <div class="info">
+            <p class="info-item1">&copy; <span id="current-year"></span> Anjali Kumari. All rights reserved.</p>
+            <p class="info-item2">Built with HTML, CSS, Bootstrap & JavaScript</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
