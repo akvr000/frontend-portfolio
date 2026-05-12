@@ -40,35 +40,35 @@
             </a>
         </div>
 
-        <!-- Hamburger -->
-        <div class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
         <!-- Navigation -->
-        <nav>
-            <ul>
-                <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                <li class="nav-item">
+        <nav id="navbar">
+            <div class="inner-navbar">
+                <ul>
+                    <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
 
-                    <!-- Theme Toggle SVG -->
-                    <svg id="theme-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
 
-                        <!-- Default Moon Icon -->
-                        <path d="M12 3a6 6 0 1 0 9 9 9 9 0 1 1-9-9"></path>
+            <div class="nav-actions">
+                <!-- Theme Toggle SVG -->
+                <svg id="theme-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
 
-                    </svg>
+                    <!-- Default Moon Icon -->
+                    <path d="M12 3a6 6 0 1 0 9 9 9 9 0 1 1-9-9"></path>
 
-                </li>
-                <li class="nav-item"><a href="#contact" class="btn btn-dark talk-btn">Let's Talk</a></li>
-            </ul>
+                </svg>
+                <a href="#contact" class="btn btn-dark talk-btn">Let's Talk</a>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -81,8 +81,8 @@
                     <h1>Hi, I'm <span class="text-primary" id="typing"></span></h1>
                 </div>
                 <p class="title">
-                    <span class="text-primary fs-4">&lt</span><span class="text-primary fs-4">&gt</span> Frontend Developer <span
-                        class="text-primary fs-4">&lt</span><span class="text-primary fs-4">/&gt</span>
+                    <span class="text-primary fs-4">&lt</span><span class="text-primary fs-4">&gt</span> Frontend
+                    Developer <span class="text-primary fs-4">&lt</span><span class="text-primary fs-4">/&gt</span>
                 </p>
                 <p class="description">
                     Building responsive web apps using React, JavaScript, and modern CSS.

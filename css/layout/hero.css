@@ -7,7 +7,7 @@
   text-align: center;
   /* padding: 120px var(--space-md);  */
   padding: 120px 25px 40px 25px;
-  /* height: 90vh;    */
+  min-height: 90vh;   
 }
 
 
