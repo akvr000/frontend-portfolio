@@ -38,28 +38,28 @@ yearSpan.textContent = currentYear;
 // added form submission functionality with popup message
 
 const form = document.getElementById("contact-form");
-const popup = document.getElementById("popup-message");
+// const popup = document.getElementById("popup-message");
 
-form.addEventListener("submit", async (e) => {
-    e.preventDefault();
+// form.addEventListener("submit", async (e) => {
+//     e.preventDefault();
 
-    const formData = new FormData(form);
+//     const formData = new FormData(form);
 
-    try {
-        await fetch("/", {
-            method: "POST",
-            body: formData
-        });
+//     try {
+//         await fetch("/", {
+//             method: "POST",
+//             body: formData
+//         });
 
-        popup.classList.add("show");
+//         popup.classList.add("show");
 
-        form.reset();
+//         form.reset();
 
-        setTimeout(() => {
-            popup.classList.remove("show");
-        }, 3000);
+//         setTimeout(() => {
+//             popup.classList.remove("show");
+//         }, 3000);
 
-    } catch (error) {
-        alert("Something went wrong!");
-    }
-});
+//     } catch (error) {
+//         alert("Something went wrong!");
+//     }
+// });
