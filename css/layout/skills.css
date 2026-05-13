@@ -2,7 +2,7 @@
 
 #skills{
     margin: 30px 0px;
-    padding: 40px 0px 70px 0px;
+    /* padding: 40px 0px 70px 0px; */
 }
 .skills-grid{
     display: flex;

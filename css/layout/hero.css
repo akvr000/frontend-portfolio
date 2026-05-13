@@ -5,8 +5,8 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 70px 24px 60px;
-  min-height: 92vh;
+  /* padding: 70px 24px 60px; */
+  /* min-height: 92vh; */
 }
 
 /* Background blobs */
@@ -35,6 +35,7 @@
   border-radius: 50px;
   font-size: 0.8rem;
   font-weight: 600;
+  margin-top: 40px;
   margin-bottom: 28px;
   letter-spacing: 0.02em;
 }
@@ -163,7 +164,7 @@
 
   /* Hero */
   #hero {
-    padding: 120px 20px;
+    /* padding: 120px 20px; */
   }
 
   h1,

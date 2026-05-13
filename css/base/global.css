@@ -26,8 +26,23 @@ h5{
 
 section {
     scroll-margin-top: 60px;
+    padding: 40px 30px;
     
 }
 /* h2{
     color: var(--custom-bg);
 } */
+
+/* media queries */
+@media (max-width: 768px) {
+    /* html{
+        font-size: 0.875rem;
+    } */
+
+    section{
+        /* padding: 30px 20px 80px 20px; */
+        padding: 30px 20px;
+    }
+
+  
+}
