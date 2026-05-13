@@ -5,11 +5,7 @@ footer{
     text-align: center;
     align-items: center;
     flex-direction: column;
-    /* padding: 12px 12px 40px 12px; */
     padding : 20px 20px;
-    /* background-color: rgb(12, 22, 116);
-     */
-     /* background-color: #101828; */
      background-color: var(--footer-bg);
     
 }
@@ -23,14 +19,16 @@ footer .icon-item>a:hover{
     transition: var(--transition);
 }
 .info-item1{
-    /* color: #99a1af; */
     color: var(--text-muted);
     font-size:medium;
 }   
 .info-item2{
     color: var(--text-light);
     font-size:medium;
-}   
+}  
+footer .info-item2 a{
+    color: var(--primary);
+} 
 
 
 /* ---------- media queries ------------ */

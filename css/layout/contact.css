@@ -5,6 +5,7 @@
     flex-direction: column;
     align-items: center;
     margin: 30px 20px;
+    padding-top: 40px;
     text-align: center;
 }
 
@@ -14,13 +15,11 @@
     justify-content: center;
     flex-wrap: wrap;
     padding-bottom: 34px;
-    /* padding: 0px 12 50px 12px; */
 }
 
 .contact-info{
     max-width: 400px;
     width: 90%;
-    /* width: 100%; */
 }
 .contact-info h3{
     padding: 20px;
@@ -28,11 +27,11 @@
 
 .contact-methods div{
     padding: 0px 12px 0px;
-    /* margin-top: 10px; */
 }
 .link:hover{
     color: var(--primary);
 }
+
 .contact-methods p,a{
     text-decoration: none;
     color: var(--dark);
@@ -42,13 +41,14 @@
     font-size: 15px;
     
 }
+
+
 .diaolog-box{
     margin-top: 30px;
     background-color: var(--accent);
 }
 .diaolog-box>p{
-    /* color: #364153; */
-    color: var(--text-dark);
+    color: var(--text-light);
 }
 .contact-icons p{
     padding-left: 36px;
@@ -75,8 +75,7 @@
 .contact-form form input{
     border-radius: var(--radius-md);
     border: none;
-    /* margin: 12px; */
-    margin: 0px 0px 8px;
+    margin: 4px 0px 8px;
     height: 40px;
     padding: 4px 12px;
     outline: none;
@@ -110,11 +109,10 @@ button[type="submit"]{
     color: var(--bg);
     border: var(--button-border);
     padding: 8px 16px;
-    margin: 0px 0px 8px;
+    margin: 4px 0px 8px;
     transition: background-color 0.3s ease-in-out;
 }
 button[type="submit"]:hover{
-    /* background-color: #24262a; */
     background-color: var(--dark-hover);
 }
 
@@ -143,18 +141,17 @@ button[type="submit"]:hover{
 
   .about-contact {
     margin: 10px 20px;
-    /* width: 100%; */
+    
   }
 
   .contact-grid {
-    /* padding: 10px 30px; */
     margin: 12px 30px;
   }
 
   .contact-form {
     width: 100%;
     padding: 0px;
-    /* margin: 0px; */
+   
   }
 }
 

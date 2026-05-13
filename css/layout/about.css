@@ -2,9 +2,7 @@
 
 #about{
     background-color: var(--section-bg);
-    /* margin: 30px 0px; */
     padding: 40px 0px 120px 0px;
-    /* padding: 70px 70px;   */
     
 }
 
@@ -30,25 +28,21 @@
     justify-content: center;
     gap: 40px;
     flex-wrap: wrap;
-    /* width: 400px; */
-    /* max-width: 100%; */
-    /* padding: 10px 70px; */
-    /* margin: 60px; */
 }
 
+.about-info:hover{
+    box-shadow: var(--shadow-hover); 
+    outline: 1px solid var(--primary);
+     cursor: pointer;
+}
 
-/* .about-me>h3{
-    font-weight: 400;
-} */
 .about-text{
     width: 500px;
-    /* max-width: 80%; */
     line-height: 22px;
 
 }
 .about-info{
     width: 500px;
-    /* max-width: 80%; */
     padding: 30px 40px 0px 10px;
     list-style-type: none;
     background-color: var(--bg);
@@ -71,18 +65,7 @@
   .about-text,
   .about-info {
     width: 80%;
+    
   }
 }
 
-/* @media (max-width: 1024px) {
-
-  .about-text,
-  .about-info {
-    width: 80%;
-  }
-
-  .projects-grid {
-    padding: 20px 30px;
-  }
-
-} */

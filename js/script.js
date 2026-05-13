@@ -32,34 +32,21 @@ hamburger.addEventListener("click", () => {
 const yearSpan = document.getElementById("current-year");
 const currentYear = new Date().getFullYear();
 yearSpan.textContent = currentYear;
-// yearSpan.innerText = currentYear;
 
+// added back to top button functionality
+const topButton = document.getElementById("back-to-top");
 
-// added form submission functionality with popup message
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    topButton.style.display = "block";
+  } else {
+    topButton.style.display = "none";
+  } 
+});
 
-const form = document.getElementById("contact-form");
-// const popup = document.getElementById("popup-message");
-
-// form.addEventListener("submit", async (e) => {
-//     e.preventDefault();
-
-//     const formData = new FormData(form);
-
-//     try {
-//         await fetch("/", {
-//             method: "POST",
-//             body: formData
-//         });
-
-//         popup.classList.add("show");
-
-//         form.reset();
-
-//         setTimeout(() => {
-//             popup.classList.remove("show");
-//         }, 3000);
-
-//     } catch (error) {
-//         alert("Something went wrong!");
-//     }
-// });
+topButton.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});

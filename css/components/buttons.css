@@ -5,6 +5,10 @@
     font-size: 0.9rem;
 }
 
+.download-cv{
+    margin-left: 50px;
+}
+
 /* hero section buttons */
 
 .hero-buttons{
@@ -89,5 +93,25 @@
     
 }
 
+/* Back to Top Button */
+
+/* #back-to-top {
+    position: sticky;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 50%;
+    background-color: var(--light-hover);
+    color: var(--text-secondary);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+#back-to-top:hover {
+    outline: 1px solid var(--primary);
+    box-shadow: var(--shawdow-hover);
+} */
 
 
