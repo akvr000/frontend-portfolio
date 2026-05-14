@@ -38,9 +38,9 @@ const topButton = document.getElementById("back-to-top");
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 300) {
-    topButton.style.display = "block";
+    topButton.classList.add("show");
   } else {
-    topButton.style.display = "none";
+    topButton.classList.remove("show");
   } 
 });
 
