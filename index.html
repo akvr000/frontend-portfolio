@@ -22,8 +22,7 @@
     <!-- <link rel="stylesheet" href="responsive.css"> -->
 
     <!-- Custom JS -->
-    <script src="js/script.js" defer></script>
-    <script src="js/theme.js" defer></script>
+    <script type="module" src="js/main.js"></script>
     <!-- Add Favicon -->
     <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
 
@@ -65,9 +64,9 @@
                 <a href="#contact" class="btn btn-dark talk-btn">Let's Talk</a>
                 <!-- <button class="btn btn-dark talk-btn">Let's talk</button> -->
                 <div class="hamburger" id="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <span class="show"></span>
+                    <span class="show"></span>
+                    <span class="show"></span>
                 </div>
             </div>
         </nav>
@@ -90,10 +89,6 @@
                     <span class="text-primary fs-4">&lt</span><span class="text-primary fs-4">&gt</span> Frontend
                     Developer <span class="text-primary fs-4">&lt</span><span class="text-primary fs-4">/&gt</span>
                 </p>
-                <!-- <p class="title">
-                    <span class="text-primary fs-4">&lt</span> Frontend
-                    Developer <span class="text-primary fs-4">/&gt</span>
-                </p> -->
                 <p class="description">
                     Building responsive web apps using React, JavaScript, and modern CSS.
                     <br> Focused on clean UI, usability, and performance.
@@ -160,7 +155,7 @@
 
         <!-- About Section -->
         <section id="about">
-            <div class="about-me">
+            <div class="about-me section-label">
                 <h2>About Me</h2>
                 <p>A passionate developer dedicated to creating impactful solutions.</p>
             </div>
@@ -182,7 +177,8 @@
                 </div>
                 <!-- About Info -->
                 <div class="about-info">
-                    <ul class="quick-facts">
+                    <div>
+                        <ul class="quick-facts">
                         <li>
                             <h2>Quick Facts</h2>
                         </li>
@@ -202,6 +198,27 @@
                                 rel="noopener noreferrer">Download CV</a>
                         </li> -->
                     </ul>
+                    </div>
+                    <!-- <ul class="quick-facts">
+                        <li>
+                            <h2>Quick Facts</h2>
+                        </li>
+                        <li><span class="custom-blue fs-5 me-2 fw-bold">▹</span>BCA Graduate (IGNOU) – First Division
+                        </li>
+                        <li><span class="custom-blue fs-5 me-2 fw-bold">▹</span>Frontend Skills: React, JavaScript
+                            (ES6+), HTML5, CSS3</li>
+                        <li><span class="custom-blue fs-5 me-2 fw-bold">▹</span>Tools: Git, GitHub, Figma-to-Code,
+                            Responsive Design</li>
+                        <li><span class="custom-blue fs-5 me-2 fw-bold">▹</span>Current Goal: <span
+                                class="text-primary">Seeking a Frontend Internship</span></li>
+                        <li><span class="custom-blue fs-5 me-2 fw-bold">▹</span>Based in New Delhi, India </li>
+
+                        Download CV
+                        <li>
+                            <a class="btn btn-dark download-cv" href="assets/cv/CV.pdf" target="_blank"
+                                rel="noopener noreferrer">Download CV</a>
+                        </li>
+                    </ul> -->
                     <div>
                         <a class="btn btn-dark download-cv" href="assets/cv/CV.pdf" target="_blank"
                             rel="noopener noreferrer">Download CV</a>
@@ -213,7 +230,7 @@
         <!-- Skills Section -->
         <section id="skills">
             <!-- Skills Grid -->
-            <div class="about-skills">
+            <div class="about-skills section-label">
                 <h2>Skills & Technologies</h2>
                 <p>A comprehensive toolkit for building modern web applications</p>
             </div>
@@ -262,7 +279,7 @@
         <!-- Projects Section -->
         <section id="projects">
             <!-- Projects Grid -->
-            <div class="about-project">
+            <div class="about-project section-label">
                 <h2>Featured Projects</h2>
                 <p>A showcase of my recent work demonstrating technical expertise and creative problem-solving</p>
             </div>
@@ -385,7 +402,7 @@
         <!-- Contact Section -->
         <section id="contact">
             <!-- Contact Info -->
-            <div class="about-contact">
+            <div class="about-contact section-label">
                 <h2>Get In Touch</h2>
                 <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your
                     vision.</p>

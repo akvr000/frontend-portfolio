@@ -7,6 +7,8 @@
 
 .download-cv{
     margin-left: 50px;
+    width: max-content;
+    min-width: 120px
 }
 
 /* hero section buttons */
@@ -34,7 +36,6 @@
 .project-btn:hover{
     background-color: var(--dark-hover);
     color: var(--bg);
-    /* background-color: var(--dark-hover); */
 }
 
 .contact-btn{
@@ -49,25 +50,26 @@
     background-color: var(--light-hover);
     border: var(--border);
 }
+
 /* project buttons */
 
 .projects-skills-buttons{
-    margin: 20px 0px;
+    /* margin: 20px 0px; */
+    display: flex;
+    flex-wrap: wrap;
 }
 .projects-skills-buttons span{
     padding: 4px;
-    /* margin: 3px; */
-    
+    margin: 3px;
     border-radius: 10px;
     border: var(--border);
     font-size: small;
     font-weight: 600;
-    
 }
 .project-buttons{
     display: flex;
     gap: 0.525rem;
-    margin: 20px 0px;
+    margin: 15px 0px;
 }
 .project-buttons a{
     /* border: 2px solid #ececf0; */
@@ -93,38 +95,6 @@
     
 }
 
-/* ── Back to top ── */
-.back-top {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: var(--custom-bg);
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.1rem;
-  opacity: 0;
-  pointer-events: none;
-  transition: all var(--transition);
-  z-index: 50;
-  box-shadow: 0 4px 20px var(--shadow-hover);
-}
-
-.back-top.show {
-  opacity: 1;
-  pointer-events: all;
-}
-
-.back-top:hover {
-  background: var(--primary);
-  transform: translateY(-3px);
-}
 
 /* media queries */
 @media (max-width: 768px) {

@@ -15,25 +15,6 @@
   color: var(--primary);
 
 }
-/* .logo:hover {
-  color: var(--primary-dark);
-  background: var(--shadow-hover);
-} */
-
-/* Hamburger hidden on desktop */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  gap: 5px;
-}
-
-.hamburger span {
-  width: 25px;
-  height: 3px;
-  background-color: var(--dark);
-  border-radius: 5px;
-}
 
 #navbar {
   display: flex;
@@ -56,6 +37,7 @@
 .nav-item:hover {
   color: var(--primary);
 }
+
 .nav-actions {
   display: flex;
   align-items: center;
@@ -80,12 +62,12 @@
   color: var(--primary);
 }
 
-.talk-btn{
+.talk-btn {
   background-color: var(--custom-bg);
   border: none;
   cursor: pointer;
   transition: var(--transition);
-} 
+}
 
 
 /* ── Scrollbar ── */
@@ -144,9 +126,10 @@
   }
 
   /* Header */
-.inner-navbar>ul {
+  .inner-navbar>ul {
     gap: 18px;
   }
+
   .talk-btn {
     display: none;
   }

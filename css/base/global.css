@@ -1,34 +1,56 @@
-html{
+html {
     scroll-behavior: smooth;
     font-size: 1rem;
 }
 
 body {
-  font-family: ui-sans-serif, system-ui, sans-serif;
-  background: var(--bg);
-  color: var(--text-main);
-  line-height: 1.5;
+    font-family: ui-sans-serif, system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text-main);
+    line-height: 1.5;
 }
+
 h1,
-h1>span{
+h1>span {
     font-size: 1.8rem;
 }
-h2,h3{
+
+h2,
+h3 {
     font-size: 1.25rem;
     color: var(--custom-bg);
 }
-h4{
+
+h4 {
     font-size: 1rem;
 }
-h5{
+
+h5 {
     font-size: 0.875rem;
 }
 
 section {
     scroll-margin-top: 60px;
     padding: 40px 30px;
-    
+
 }
+
+.section-label {
+    margin: 40px 0px;
+    text-align: center;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 20px;
+    text-align: center; */
+}
+
+.section-label p{
+    color: var(--text-secondary);
+    font-size: 1rem;
+    margin-top: 8px;
+}
+
 /* h2{
     color: var(--custom-bg);
 } */
@@ -39,10 +61,10 @@ section {
         font-size: 0.875rem;
     } */
 
-    section{
+    section {
         /* padding: 30px 20px 80px 20px; */
-        padding: 30px 20px;
+        /* padding: 30px 20px; */
     }
 
-  
+
 }

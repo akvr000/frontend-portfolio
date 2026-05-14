@@ -1,19 +1,32 @@
 /* Main Styles */
 
+/* Import Base Styles */
 @import url('./base/variables.css');
 @import url('./base/global.css');
 @import url('./base/reset.css');
 
+/* Import Component Styles */
 @import url('./components/navbar.css');
 @import url('./components/buttons.css');
-/* @import url('./components/icons.css'); */
+@import url('./components/hamburger.css');
+@import url('./components/back-to-top.css');
 
+/* Import Layout Styles */
 @import url('./layout/hero.css');
 @import url('./layout/about.css');
 @import url('./layout/skills.css');
 @import url('./layout/projects.css');
 @import url('./layout/contact.css');
 @import url('./layout/footer.css');
+
+/* Import UI Styles */
+@import url('./ui/bg-blob-effect.css');
+@import url('./ui/typing-effect.css');
+@import url('./ui/pop-message.css');
+@import url('./ui/scroll-to-top.css');
+@import url('./ui/status-badge.css');
+@import url('./ui/scroll-arrow.css');
+
 
 
 
