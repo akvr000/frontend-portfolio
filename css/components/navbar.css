@@ -1,3 +1,4 @@
+/* Navbar */
 #header {
   display: flex;
   justify-content: space-between;
@@ -20,7 +21,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 10px var(--space-md); */
 }
 
 .inner-navbar>ul {
@@ -46,6 +46,7 @@
   padding-left: 20px;
 }
 
+/* Theme Icon */
 #theme-icon {
   cursor: pointer;
 
@@ -62,6 +63,7 @@
   color: var(--primary);
 }
 
+/* Talk Button */
 .talk-btn {
   background-color: var(--custom-bg);
   border: none;
@@ -70,23 +72,7 @@
 }
 
 
-/* ── Scrollbar ── */
-::-webkit-scrollbar {
-  width: 6px;
-}
 
-::-webkit-scrollbar-track {
-  background: var(--bg);
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--dark);
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--primary);
-}
 
 /* ---------- media queries ------------ */
 
@@ -97,14 +83,13 @@
     color: var(--primary);
   }
 
-
   .inner-navbar {
     position: absolute;
-    top: 60px;
+    top: 47px;
     right: 0;
-    width: 100%;
+    width: 30%;
     background: var(--bg);
-    /* background-color: var(--black); */
+    transition: all 0.3s ease;
     display: none;
   }
 
@@ -121,13 +106,6 @@
 
   #header {
     padding: 10px 10px;
-    /* position: sticky; */
-    /* top: 0; */
-  }
-
-  /* Header */
-  .inner-navbar>ul {
-    gap: 18px;
   }
 
   .talk-btn {

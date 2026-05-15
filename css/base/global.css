@@ -35,6 +35,10 @@ section {
 
 }
 
+section:nth-child(even) {
+     background-color: var(--section-bg);
+}
+
 .section-label {
     margin: 40px 0px;
     text-align: center;

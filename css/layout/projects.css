@@ -1,10 +1,5 @@
 /* ------------Projects section---------- */
 
-#projects {
-    /* padding: 40px 0px 70px 0px; */
-    background-color: var(--section-bg);
-}
-
 .projects-grid {
     display: flex;
     justify-content: center;
@@ -42,6 +37,10 @@
     .projects-grid {
         padding: 30px;
 
+    }
+    .projects-grid>article {
+        max-width: 90%;
+        padding: 15px;
     }
 
 }
