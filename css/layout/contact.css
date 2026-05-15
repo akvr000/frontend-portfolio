@@ -98,7 +98,7 @@
     border: var(--input-border);
 }
 
-.contact-form form, button{
+.contact-form form{
     padding: 12px;
     margin: 12px 12px 0px 12px;
     
@@ -122,19 +122,17 @@ button[type="submit"]:hover{
 
 @media (max-width: 768px) {
 
-  .about-contact {
-    margin: 10px 20px;
-    
-  }
-
   .contact-grid {
-    margin: 12px 30px;
+    margin: 12px 15px;
   }
 
   .contact-form {
     width: 100%;
     padding: 0px;
    
+  }
+  .contact-info {
+    max-width: 80%;
   }
 }
 

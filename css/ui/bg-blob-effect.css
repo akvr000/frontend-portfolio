@@ -11,3 +11,12 @@
   transform: translateX(-50%);
   pointer-events: none;
 }
+
+@media (max-width: 768px) {
+  #hero::before {
+    width: 350px;
+    max-width: 90%;
+    height: 400px;
+    top: -150px;
+  }
+}
