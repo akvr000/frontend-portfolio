@@ -1,3 +1,4 @@
+/* Navbar */
 #header {
   display: flex;
   justify-content: space-between;
@@ -16,26 +17,10 @@
 
 }
 
-/* Hamburger hidden on desktop */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  gap: 5px;
-}
-
-.hamburger span {
-  width: 25px;
-  height: 3px;
-  background-color: var(--dark);
-  border-radius: 5px;
-}
-
 #navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px var(--space-md);
 }
 
 .inner-navbar>ul {
@@ -52,6 +37,7 @@
 .nav-item:hover {
   color: var(--primary);
 }
+
 .nav-actions {
   display: flex;
   align-items: center;
@@ -60,6 +46,7 @@
   padding-left: 20px;
 }
 
+/* Theme Icon */
 #theme-icon {
   cursor: pointer;
 
@@ -73,7 +60,19 @@
 #theme-icon:hover {
   transform: scale(1.1);
   rotate: 15deg;
+  color: var(--primary);
 }
+
+/* Talk Button */
+.talk-btn {
+  background-color: var(--custom-bg);
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+
+
 
 /* ---------- media queries ------------ */
 
@@ -84,14 +83,13 @@
     color: var(--primary);
   }
 
-
   .inner-navbar {
     position: absolute;
-    top: 60px;
+    top: 47px;
     right: 0;
-    width: 100%;
+    width: 30%;
     background: var(--bg);
-    /* background-color: var(--black); */
+    transition: all 0.3s ease;
     display: none;
   }
 
@@ -110,10 +108,6 @@
     padding: 10px 10px;
   }
 
-  /* Header */
-.inner-navbar>ul {
-    gap: 18px;
-  }
   .talk-btn {
     display: none;
   }

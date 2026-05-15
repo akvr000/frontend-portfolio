@@ -3,72 +3,38 @@
 #hero {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   text-align: center;
-  /* padding: 120px var(--space-md);  */
-  padding: 120px 25px 40px 25px;
-  min-height: 90vh;   
+  /* padding: 70px 24px 60px; */
+  min-height: 95vh;
 }
 
 
-/* #typing::after {
-  content: "|";
-  animation: blink 1s infinite;
-}
-
-@keyframes blink {
-  0%, 50%, 100% { opacity: 1; }
-  25%, 75% { opacity: 0; }
-} */
-
-#typing::after {
-  content: "|";
-  animation: blink 1s infinite;
-}
-
-#typing.done::after {
-  content: "";
-  animation: none;
-}
-
-@keyframes blink {
-
-  0%,
-  50%,
-  100% {
-    opacity: 1;
-  }
-
-  25%,
-  75% {
-    opacity: 0;
-  }
-}
-
+/* Text Styles */
 .text-primary {
   color: var(--primary);
-  /* font-size: 1.8rem; */
   font-weight: 500;
 
 }
 
+.main-text>h1,
+#typing {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
 .title {
-  /* color: rgb(79, 74, 74); */
   color: var(--text-secondary);
-  /* color: grey; */
-  /* color: #717182; */
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-weight: 400;
   margin-top: 18px;
 }
 
 .description {
-  /* color: grey; */
-  /* color: #6a7282; */
   color: var(--text-muted);
   font-size: large;
   font-weight: 400;
-  /* font-weight: lighter; */
 }
 
 
@@ -77,46 +43,16 @@
   margin: 30px;
   padding: var(--space-xs);
   gap: 16px;
-  /* margin-bottom: 60px;  */
 }
 
 .icon-item>a {
-  /* color: #364153; */
   color: var(--text-secondary);
   transition: var(--transition);
 }
 
 .icon-item>a:hover {
-  /* color: #030213; */
   color: var(--dark);
 }
-.scroll-arrow{
-    position: relative;
-    /* bottom: 20px; */
-    left: 50%;
-    margin: 15px 0px;
-    transform: translateX(-50%);
-
-    animation: float 2s ease-in-out infinite;
-}
-
-@keyframes float{
-    0%{
-        transform: translate(-50%, 0);
-        opacity: 0.5;
-    }
-
-    50%{
-        transform: translate(-50%, 10px);
-        opacity: 1;
-    }
-
-    100%{
-        transform: translate(-50%, 0);
-        opacity: 0.5;
-    }
-}
-
 
 
 /* ---------- media queries ------------ */
@@ -125,10 +61,6 @@
 
 @media (max-width: 768px) {
 
-  /* Hero */
-  #hero {
-    padding: 120px 20px;
-  }
 
   h1,
   h1>span {
@@ -138,6 +70,11 @@
   .hero-text>.title {
     font-size: 1.4rem;
   }
+
+  .description {
+    text-align: center;
+  }
+
 
 
 }
