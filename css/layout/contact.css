@@ -90,6 +90,7 @@
     margin: 0px 0px 8px;
     padding: 8px 12px;
     resize: none;
+    color: var(--dark);
     background-color: var(--input-bg);
     border-radius: var(--radius-md);
     border: none;
