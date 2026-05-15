@@ -21,10 +21,69 @@ This portfolio is a reflection of my learning journey and the projects I’ve bu
 - Responsive design for all devices 
 - Modern and clean UI design 
 - Smooth scrolling navigation  
-- Dark/Light mode toggle  
+- Dark/Light mode toggle, saves preference via localStorage  
 - Projects showcase section  
 - Contact form  
 - Downloadable resume/CV  
+- CSS VariablesAll colors and spacing in one place — easy to customize
+
+## 📁 Project Structure
+
+```text
+portfolio/
+│
+├── index.html                  ← Main HTML file (all sections)
+│
+├── css/
+│   ├── main.css                ← Imports all CSS files in order
+│   │
+│   ├── base/
+│   │   ├── variables.css       ← CSS custom properties (colors, spacing, themes)
+│   │   ├── global.css          ← Body, fonts, section labels, scrollbar
+│   │   └── reset.css           ← Box-sizing, margin/padding reset
+│   │
+│   ├── components/
+│   │   ├── navbar.css          ← Header, nav links, theme toggle
+│   │   ├── hamburger.css       ← Hamburger menu & mobile nav styles
+│   │   ├── back-to-top.css     ← Back to top button
+│   │   ├── buttons.css         ← All button styles (hero, project, download CV)
+│   │   └── customized-scrollbar.css ← Custom scrollbar styles
+│   │
+│   ├── layout/
+│   │   ├── hero.css            ← Hero section, typing effect, scroll arrow
+│   │   ├── about.css           ← About grid, quick facts card
+│   │   ├── skills.css          ← Skill cards
+│   │   ├── projects.css        ← Project cards
+│   │   ├── contact.css         ← Contact form, info panel
+│   │   └── footer.css          ← Footer layout, social icons
+│   │
+│   └── ui/
+│       ├── bg-blob-effect.css  ← Background blob animation
+│       ├── pop-message.css     ← Pop/toast message styles
+│       ├── scroll-arrow.css    ← Scroll arrow indicator
+│       ├── status-badge.css    ← Status badge (available for work, etc.)
+│       └── typing-effect.css   ← Typing animation styles
+│
+├── js/
+│   ├── main.js                 ← Main JS entry point
+│   ├── theme.js                ← Dark/light theme toggle with localStorage
+│   ├── hamburger.js            ← Hamburger menu functionality
+│   ├── back-to-top.js          ← Back to top button functionality
+│   └── typing-effect.js        ← Typing animation logic
+│
+└── assets/
+    ├── icons/
+    │   └── favicon.svg         ← Browser tab icon
+    ├── images/
+    │   ├── Hero.png            ← Hero section image
+    │   ├── About.png           ← About section image
+    │   ├── Skills.png          ← Skills section image
+    │   ├── Projects.png        ← Projects section image
+    │   ├── Contact.png         ← Contact section image
+    │   └── Footer.png          ← Footer section image
+    └── cv/
+        └── CV.pdf              ← Downloadable CV
+```
 
 ## 📸 Preview
 
@@ -34,13 +93,21 @@ This portfolio is a reflection of my learning journey and the projects I’ve bu
 ## About Page
 ![About Section](assets/images/About.png)
 
+## Skills Page
+![Skills Section](assets/images/Skills.png)
+
+## Projects Page
+![Projects Section](assets/images/Projects.png)
+
 ## Contact Page
 ![Contact Section](assets/images/Contact.png)
 
+## Footer Page
+![Footer Section](assets/images/Footer.png)
 
 ## 🔗 Live Website
 
-[Click here to view portfolio](your-live-link-here)
+[Click here to view portfolio](https://akvr000.netlify.app)
 
 ## 🎯 What I Learned
 
