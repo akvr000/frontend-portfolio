@@ -9,3 +9,11 @@ import "./hamburger.js"
 const yearSpan = document.getElementById("current-year");
 const currentYear = new Date().getFullYear();
 yearSpan.textContent = currentYear;
+
+// reset form on page load
+window.onpageshow = function(event) {
+    const form = document.querySelector("form");
+    if(form) {
+        form.reset();
+    }
+}
