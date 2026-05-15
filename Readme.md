@@ -107,7 +107,7 @@ portfolio/
 
 ## 🔗 Live Website
 
-[Click here to view portfolio](https://akvr000.netlify.app)
+[Click here to view portfolio](https://akvr000.github.io/frontend-portfolio/)
 
 ## 🎯 What I Learned
 
