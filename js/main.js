@@ -1,3 +1,4 @@
+
 // added typing effect for name in header
 
 const text = "Anjali Kumari";

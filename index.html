@@ -22,7 +22,8 @@
     <!-- <link rel="stylesheet" href="responsive.css"> -->
 
     <!-- Custom JS -->
-    <script src="js/script.js" defer></script>
+    <!-- <script type="module" src="js/main.js"></script> -->
+     <script src="js/main.js" defer></script>
     <script src="js/theme.js" defer></script>
     <!-- Add Favicon -->
     <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
@@ -63,10 +64,11 @@
 
                 </svg>
                 <a href="#contact" class="btn btn-dark talk-btn">Let's Talk</a>
+                <!-- <button class="btn btn-dark talk-btn">Let's talk</button> -->
                 <div class="hamburger" id="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <span class="show"></span>
+                    <span class="show"></span>
+                    <span class="show"></span>
                 </div>
             </div>
         </nav>
@@ -150,7 +152,7 @@
 
         <!-- About Section -->
         <section id="about">
-            <div class="about-me">
+            <div class="about-me section-label">
                 <h2>About Me</h2>
                 <p>A passionate developer dedicated to creating impactful solutions.</p>
             </div>
@@ -172,7 +174,8 @@
                 </div>
                 <!-- About Info -->
                 <div class="about-info">
-                    <ul class="quick-facts">
+                    <div>
+                        <ul class="quick-facts">
                         <li>
                             <h2>Quick Facts</h2>
                         </li>
@@ -180,18 +183,18 @@
                         </li>
                         <li><span class="custom-blue fs-5 me-2 fw-bold">▹</span>Frontend Skills: React, JavaScript
                             (ES6+), HTML5, CSS3</li>
-                        <li><span class="custom-blue fs-5 me-2 fw-bold">▹</span>Tools: Git, GitHub, Figma-to-Code
-                            Conversion, Responsive Design</li>
-                        <li><span class="custom-blue fs-5 me-2 fw-bold">▹</span>Current Goal: Seeking a Frontend
-                            Developer Internship</li>
+                        <li><span class="custom-blue fs-5 me-2 fw-bold">▹</span>Tools: Git, GitHub, Figma-to-Code,
+                            Responsive Design</li>
+                        <li><span class="custom-blue fs-5 me-2 fw-bold">▹</span>Current Goal: <span
+                                class="text-primary">Seeking a Frontend Internship</span></li>
                         <li><span class="custom-blue fs-5 me-2 fw-bold">▹</span>Based in New Delhi, India </li>
-
-                        <!-- Download CV -->
-                        <li>
-                            <a class="btn btn-dark download-cv" href="assets/CV.pdf" target="_blank"
-                                rel="noopener noreferrer">Download CV</a>
                         </li>
                     </ul>
+                    </div>
+                    <div>
+                        <a class="btn btn-dark download-cv" href="assets/cv/CV.pdf" target="_blank"
+                            rel="noopener noreferrer">Download CV</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -199,7 +202,7 @@
         <!-- Skills Section -->
         <section id="skills">
             <!-- Skills Grid -->
-            <div class="about-skills">
+            <div class="about-skills section-label">
                 <h2>Skills & Technologies</h2>
                 <p>A comprehensive toolkit for building modern web applications</p>
             </div>
@@ -212,9 +215,11 @@
                             <span>HTML5</span>
                             <span>CSS3</span>
                             <span>JavaScript (ES6+)</span>
+                            <span>Flexbox & Grid</span>
+                            <span>Semantic HTML</span>
                             <span>Responsive Design</span>
-                            <span>React</span>
                             <span>Bootstrap</span>
+                            <span>React</span>
                         </div>
                     </div>
                     <!-- Tools -->
@@ -224,16 +229,18 @@
                             <span>Git</span>
                             <span>GitHub</span>
                             <span>VS Code</span>
+                            <span>Figma</span>
                             <span>Chrome DevTools</span>
+                            <span>Netlify</span>
                         </div>
                     </div>
                     <!-- Others -->
                     <div class="skill-category">
                         <h3>Others</h3>
                         <div class="skills-buttons">
-                            <span>Figma to Code (UI Implementation)</span>
-                            <span>API Integration (Basic)</span>
+                            <span>Figma to Code</span>
                             <span>Debugging</span>
+                            <span>API Integration (Basic)</span>
                             <span>Problem Solving</span>
                         </div>
                     </div>
@@ -244,7 +251,7 @@
         <!-- Projects Section -->
         <section id="projects">
             <!-- Projects Grid -->
-            <div class="about-project">
+            <div class="about-project section-label">
                 <h2>Featured Projects</h2>
                 <p>A showcase of my recent work demonstrating technical expertise and creative problem-solving</p>
             </div>
@@ -263,7 +270,8 @@
 
                     <!-- Project Buttons -->
                     <div class="project-buttons">
-                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="code">
+                        <a href="https://github.com/akvr000/frontend-portfolio" target="_blank"
+                            rel="noopener noreferrer" class="code">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round">
@@ -275,7 +283,7 @@
                         </a>
 
 
-                        <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="demo">
+                        <a href="https://akvr000.netlify.app/" target="_blank" rel="noopener noreferrer" class="demo">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round">
@@ -288,15 +296,16 @@
                 </article>
 
                 <article>
-                    <h4>Task Management App</h4>
-                    <p>Collaborative task management tool with real-time updates, team collaboration features, and
-                        analytics dashboard.</p>
+                    <h4>SafeVault — Crypto Wallet SaaS Landing Page</h4>
+                    <h5>- Coming Soon</h5>
+                    <p>A responsive SaaS landing page for a fictional crypto wallet with hero section, 3-column
+                        features, pricing tiers, and a minimalist footer using glassmorphism design.</p>
                     <div class="projects-skills-buttons">
-                        <span>Next.js</span>
-                        <span>TypeScript</span>
-                        <span>MongoDB</span>
-                        <span>Socket.io</span>
-
+                        <span>React</span>
+                        <span>Tailwind CSS</span>
+                        <span>Framer Motion</span>
+                        <span>Glassmorphism UI</span>
+                        <span>Responsive Design</span>
                     </div>
                     <div class="project-buttons">
                         <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="code">
@@ -323,15 +332,16 @@
                     </div>
                 </article>
                 <article>
-                    <h4>Weather Dashboard</h4>
-                    <p>Interactive weather application with location-based forecasts, historical data visualization, and
-                        severe weather alerts.</p>
+                    <h4>CryptoPulse — Crypto Tracker & Journal</h4>
+                    <h5>- Coming Soon</h5>
+                    <p>A real-time crypto portfolio tracker and trading journal with live coin prices, performance
+                        charts, and personal trade notes powered by the CoinGecko API.</p>
                     <div class="projects-skills-buttons">
                         <span>React</span>
                         <span>Tailwind CSS</span>
-                        <span>Weather API</span>
+                        <span>CoinGecko API</span>
                         <span>Recharts</span>
-
+                        <span>Framer Motion</span>
                     </div>
                     <div class="project-buttons">
                         <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="code">
@@ -364,7 +374,7 @@
         <!-- Contact Section -->
         <section id="contact">
             <!-- Contact Info -->
-            <div class="about-contact">
+            <div class="about-contact section-label">
                 <h2>Get In Touch</h2>
                 <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your
                     vision.</p>
@@ -441,16 +451,16 @@
                             autocomplete="email" required>
 
                         <label for="message">Message</label>
-                        <textarea name="message" id="message" rows="4" cols="35"
+                        <textarea name="message" id="message" rows="4" 
                             placeholder="Write your message here..." required></textarea>
 
-                        <button type="submit">Send Message</button>
+                        <button type="submit"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
                     </form>
                 </div>
                 <!-- Popup Message -->
-                <div id="popup-message" class="popup">
+                <!-- <div id="popup-message" class="popup">
                     Message sent successfully!
-                </div>
+                </div> -->
             </div>
         </section>
     </main>
@@ -509,10 +519,15 @@
         </div>
         <div class="info">
             <p class="info-item1">&copy; <span id="current-year"></span> Anjali Kumari. All rights reserved.</p>
-            <p class="info-item2">Built with HTML, CSS, Bootstrap & JavaScript</p>
+            <p class="info-item2">Built with HTML, CSS, Bootstrap & JavaScript <br>
+                Made with ❤️ & lots of coffee ☕ <br>
+                Available for frontend internships <br> · <a href="https://github.com/akvr000" target="_blank"
+                    rel="noopener noreferrer">GitHub</a> · <a href="https://linkedin.com/in/akvr000" target="_blank"
+                    rel="noopener noreferrer">LinkedIn</a></p>
         </div>
-    </footer>
 
+    </footer>
+ 
 </body>
 
 </html>
