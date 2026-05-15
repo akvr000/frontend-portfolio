@@ -1,5 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <text x="50" y="60" font-family="sans-serif" font-weight="600" font-size="73" text-anchor="middle" dominant-baseline="middle" fill="#ffffff">
-    <tspan fill="#007bff">&lt;</tspan><tspan fill="#007bff">/&gt;</tspan>
-  </text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2563eb;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background rounded square -->
+  <rect width="32" height="32" rx="7" ry="7" fill="#0d1117"/>
+
+  <!-- Subtle border glow -->
+  <rect width="32" height="32" rx="7" ry="7" fill="none" stroke="#2563eb" stroke-width="1" opacity="0.35"/>
+
+  <!-- AK text centered, smaller size -->
+  <text
+    x="16"
+    y="21"
+    text-anchor="middle"
+    font-family="ui-sans-serif, system-ui, sans-serif"
+    font-size="18"
+    font-weight="600"
+    fill="url(#blueGrad)"
+    letter-spacing="1"
+  >AK</text>
 </svg>
