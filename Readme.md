@@ -120,7 +120,7 @@ portfolio/
 ## 📬 Contact
 
 - GitHub: [visit GitHub Profile](https://github.com/akvr000)    
-- LinkedIn: [visit GitHub Profile](https://linkedin.com/in/akvr000) 
+- LinkedIn: [visit Linkedin Profile](https://linkedin.com/in/akvr000) 
 
 
 ## ⭐ Future Improvements
