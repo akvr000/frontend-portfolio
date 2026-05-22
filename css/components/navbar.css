@@ -71,9 +71,6 @@
   transition: var(--transition);
 }
 
-
-
-
 /* ---------- media queries ------------ */
 
 @media (max-width: 768px) {
@@ -91,6 +88,8 @@
     background: var(--bg);
     transition: all 0.3s ease;
     display: none;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 4px 20px var(--shadow-hover);
   }
 
   .inner-navbar>ul {

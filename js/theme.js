@@ -27,54 +27,33 @@ const sunIcon = `
 <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
 `;
 
-
-// Load saved theme
-let savedTheme =
-    localStorage.getItem('theme') ||
-    (window.matchMedia('(prefers-color-scheme: dark)').matches
-        ? 'dark'
-        : 'light');
-
-
-// Apply theme
+let savedTheme = localStorage.getItem('theme') || 'light';
 root.setAttribute('data-theme', savedTheme);
 
+if (savedTheme === 'dark') {
+    icon.innerHTML = sunIcon;
+}else{
+    icon.innerHTML = moonIcon;
+}
 
-// Set icon
-icon.innerHTML =
-    savedTheme === 'dark'
-        ? sunIcon
-        : moonIcon;
-
-
-// Toggle theme
-icon.addEventListener('click', () => {
-
-    let currentTheme =
-        root.getAttribute('data-theme');
-
-    let newTheme =
-        currentTheme === 'dark'
-            ? 'light'
-            : 'dark';
-
-    // Apply theme
-    root.setAttribute('data-theme', newTheme);
-
-    // Save theme
-    localStorage.setItem('theme', newTheme);
-
+icon.addEventListener('click',()=>{
+    let currentTheme = root.getAttribute('data-theme');
+    let newTheme;
+    if (currentTheme === 'dark') {
+        newTheme = 'light';
+        icon.innerHTML = moonIcon;
+    }else{
+        newTheme ="dark";
+        icon.innerHTML = sunIcon;
+    }
     // Rotate animation
-    icon.style.rotate = '180deg';
+    icon.style.rotate = '150deg';
 
     setTimeout(() => {
         icon.style.rotate = '0deg';
     }, 400);
 
-    // Change icon
-    icon.innerHTML =
-        newTheme === 'dark'
-            ? sunIcon
-            : moonIcon;
-
+    root.setAttribute('data-theme', newTheme);
+    localStorage.setItem("theme", newTheme);
 });
+
