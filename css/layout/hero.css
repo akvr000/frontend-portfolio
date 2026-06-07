@@ -6,16 +6,8 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  /* padding: 70px 24px 60px; */
   min-height: 95vh;
-}
-
-
-/* Text Styles */
-.text-primary {
-  color: var(--primary);
-  font-weight: 500;
-
+  padding: 0px 20px;
 }
 
 .main-text>h1,
@@ -36,7 +28,6 @@
   font-size: large;
   font-weight: 400;
 }
-
 
 .icons {
   display: flex;

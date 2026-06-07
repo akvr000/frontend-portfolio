@@ -10,7 +10,7 @@
   border-radius: 50px;
   font-size: 0.8rem;
   font-weight: 600;
-  /* margin-top: 40px; */
+  margin-top: 40px;
   margin-bottom: 28px;
   letter-spacing: 0.02em;
 }
@@ -33,5 +33,12 @@
 
   50% {
     box-shadow: 0 0 0 5px rgba(34, 197, 94, 0);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-badge {
+    margin-top: 0px;
+    margin-bottom: 20px;
   }
 }

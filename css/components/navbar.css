@@ -7,34 +7,31 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: var(--bg);
-
-}
-
-.logo,
-.text-primary {
-  color: var(--primary);
+  background-color: var(--bg-header);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
 
 }
 
 #navbar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 20px;
 }
 
 .inner-navbar>ul {
   padding-top: 15px;
   display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 25px;
+  gap: 20px;
   list-style: none;
   color: var(--text-secondary);
   transition: var(--transition);
 
 }
 
-.nav-item:hover {
+.nav-link:hover {
   color: var(--primary);
 }
 
@@ -43,7 +40,6 @@
   align-items: center;
   justify-content: space-around;
   gap: 20px;
-  padding-left: 20px;
 }
 
 /* Theme Icon */
@@ -75,9 +71,8 @@
 
 @media (max-width: 768px) {
 
-  .hamburger {
-    display: flex;
-    color: var(--primary);
+  #header {
+    padding: 10px 10px;
   }
 
   .inner-navbar {
@@ -101,10 +96,6 @@
 
   .inner-navbar.active {
     display: block;
-  }
-
-  #header {
-    padding: 10px 10px;
   }
 
   .talk-btn {

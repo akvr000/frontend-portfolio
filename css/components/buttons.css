@@ -67,7 +67,8 @@
 .project-buttons{
     display: flex;
     gap: 0.525rem;
-    margin: 15px 0px;
+    margin-top: 15px;
+    /* margin: 15px 0px; */
 }
 .project-buttons a{
     /* border: 2px solid #ececf0; */

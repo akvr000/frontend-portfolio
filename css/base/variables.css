@@ -7,6 +7,9 @@
   /* --accent:         #06b6d4; */
   --accent: #eff6ff;
 
+/* header */
+  --bg-header: rgba(255, 255, 255, 0.8);
+
   /* Backgrounds */
   --bg:             #ffffff;
   --bg-100:         #f8faff;
@@ -69,6 +72,9 @@
   --primary-dark:   #2563eb;
   --primary-light:  rgba(59,130,246,0.12);
   --primary-glow:   rgba(59,130,246,0.22);
+
+/* header */
+  --bg-header: rgba(13,17,23,0.8);
 
   --bg:             #0d1117;
   --bg-100:         #161b22;
