@@ -50,12 +50,17 @@
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 700px) {
 
 
-  h1,
+  /* h1,
   h1>span {
     font-size: 1.6rem;
+  } */
+
+  .main-text {
+    font-size: 1.6rem;
+    font-weight: 600;
   }
 
   .hero-text>.title {

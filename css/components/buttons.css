@@ -1,62 +1,64 @@
 /* header button */
 
-.talk-btn{
+.talk-btn {
     padding: 2px var(--space-sm);
     font-size: 0.9rem;
 }
 
-.download-cv{
-    margin-left: 50px;
-    width: max-content;
-    min-width: 120px
-}
 
 /* hero section buttons */
 
-.hero-buttons{
+.hero-buttons {
     margin-top: 20px;
     display: flex;
 }
 
-.hero-buttons a{
+.hero-buttons a {
     padding: 10px 16px;
     border-radius: var(--radius-sm);
     margin: 6px;
 
 }
 
-.download-cv,
-.project-btn{
-    color: var(--bg);
-    background-color:var(--dark);
-    transition:var(--transition);
+.download-cv {
+    margin-left: 50px;
+    width: max-content;
+    min-width: 120px
 }
+
+.download-cv,
+.project-btn {
+    color: var(--bg);
+    background-color: var(--dark);
+    transition: var(--transition);
+}
+
 .download-cv:hover,
-.project-btn:hover{
+.project-btn:hover {
     background-color: var(--dark-hover);
     color: var(--bg);
 }
 
-.contact-btn{
-     border: var(--border);
-     color: var(--dark);
-     font-weight: 500;
-     transition: var(--transition)
-    
+.contact-btn {
+    border: var(--border);
+    color: var(--dark);
+    font-weight: 500;
+    transition: var(--transition)
 }
 
-.contact-btn:hover{
+.contact-btn:hover {
     background-color: var(--light-hover);
     border: var(--border);
 }
 
 /* project buttons */
 
-.projects-skills-buttons{
+.projects-skills-buttons {
     display: flex;
     flex-wrap: wrap;
 }
-.projects-skills-buttons span{
+
+.projects-skills-buttons span {
     padding: 4px;
     margin: 3px;
     border-radius: 10px;
@@ -64,40 +66,46 @@
     font-size: small;
     font-weight: 600;
 }
-.project-buttons{
+
+.project-buttons {
     display: flex;
     gap: 0.525rem;
     margin-top: 15px;
     /* margin: 15px 0px; */
 }
-.project-buttons a{
+
+.project-buttons a {
     /* border: 2px solid #ececf0; */
     outline: var(--border);
     padding: 5px 10px;
     border-radius: var(--radius-md);
 }
-.code{
+
+.code {
     transition: background-color 0.3s ease-in-out;
 }
-.code:hover{
+
+.code:hover {
     /* background-color: #ececf0; */
-     background-color: var(--light-hover);
+    background-color: var(--light-hover);
 }
-.demo{
+
+.demo {
     background-color: var(--dark);
     color: var(--bg);
     transition: var(--transition);
 }
-.demo:hover{
+
+.demo:hover {
     /* background-color: #24262a; */
     background-color: var(--dark-hover);
-    
+
 }
 
 
 /* media queries */
 @media (max-width: 768px) {
-    .download-cv{
+    .download-cv {
         margin-left: 30px;
     }
 }

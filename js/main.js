@@ -1,7 +1,10 @@
 import "./typing-effect.js";
 import "./theme.js";
 import "./back-to-top.js";
-import "./hamburger.js"
+import "./hamburger.js";
+import "./skillsData.js";
+import "./projectsData.js";
+
 
 
 // added current year in footer
