@@ -8,7 +8,7 @@ const projectsData = [
     },
     {
         title: "SafeVault — Crypto Wallet SaaS Landing Page",
-        desc: "A responsive SaaS landing page for a fictional crypto wallet with hero section, 3-column features, pricing tiers, and a minimalist footer using glassmorphism design.",
+        desc: "Built a modern crypto-wallet SaaS landing page featuring responsive layouts, animated interactions with Framer Motion, pricing sections, and glassmorphism UI.",
         skills: ["React", "Tailwind CSS", "Framer Motion", "Glassmorphism UI", "Responsive Design"],
         code: "https://github.com",
         demo: "https://example.com"

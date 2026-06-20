@@ -15,7 +15,7 @@
     flex-wrap: wrap;
 }
 .about-text {
-    line-height: 22px;
+    line-height: 1.8;
     padding: 20px 0px;
 }
 
@@ -40,6 +40,7 @@
 .about-info ul {
     list-style-type: none;
     line-height: 40px;
+    list-style-position: inside;
 }
 .about-info li::before {
     content: "▹";

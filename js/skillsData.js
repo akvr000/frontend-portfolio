@@ -4,15 +4,15 @@ const container = document.querySelector(".skills-grid");
 const skillsData = [
     {
         category: "Frontend",
-        skill: ["HTML5", "CSS3", "JavaScript (ES6+)", "Flexbox & Grid", "Semantic HTML", "Responsive Design", "Bootstrap", "react"]
+        skill: ["HTML5", "CSS3", "JavaScript (ES6+)", "Flexbox & Grid", "Semantic HTML", "Responsive Design", "Bootstrap", "React"]
     },
     {
-        category: "Backend",
+        category: "Tools & Workflow",
         skill: ["Git", "GitHub", "VS Code", "Figma", "Chrome DevTools", "Netlify", "WebForms"]
     },
     {
         category: "Others",
-        skill: ["Figma to Code", "Debugging", "API Integration(Basic)", "Problem Solving"]
+        skill: ["Figma to Code", "Debugging", "API Integration (Basic)", "Problem Solving"]
     }
 ]
 
