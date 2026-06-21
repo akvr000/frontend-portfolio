@@ -1,0 +1,144 @@
+/* Container Grid Layout */
+.certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 24px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px 15px;
+    margin: 0 auto;
+}
+
+/* Individual Certificate Card */
+.cert-card {
+    background-color: var(--bg); 
+    /* border: 1px solid #e2e8f0; */
+    border: none;
+    outline: var(--border);
+    /* border-top: 4px solid var(--custom-bg);  */
+     border-radius: var(--radius-md);
+    padding: 24px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    transition: transform 200ms ease, box-shadow 200ms ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.cert-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+     border-top: 4px solid var(--custom-bg); 
+}
+
+/* Card Header Layout */
+.cert-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+/* Styled Text-Based Logo Placeholder Box */
+.cert-logo {
+    width: 54px;
+    height: 54px;
+    background-color: var(--custom-bg); 
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(30, 96, 145, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Category Badge (Top Right) */
+.cert-badge {
+    background-color: #eff6ff;
+    color: var(--custom-bg);
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 20px;
+    /* border: 1px solid #dbeafe; */
+    /* outline: 1px solid #dbeafe; */
+    outline: 1px solid var(--custom-bg);
+}
+
+/* Core Content Typography */
+.cert-title {
+    /* color: #0f172a; */
+    color: var(--black-to-blue);
+    font-size: 1.15rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin: 0 0 4px 0;
+}
+
+.cert-issuer {
+    /* color: #2563eb; */
+    color: var(--blue-to-white);
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 0 0 16px 0;
+}
+
+/* Metadata Rows (Dates & ID) */
+.cert-meta {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+    color: #64748b;
+    font-size: 0.85rem;
+    margin-bottom: 6px;
+}
+
+/* .cert-meta-divider {
+    color: #cbd5e1;
+    margin: 0 2px;
+} */
+
+.cert-id-wrapper {
+    color: #94a3b8;
+    font-size: 0.8rem;
+    margin: 0 0 24px 0;
+}
+
+/* Align SVGs neatly next to text rows */
+.cert-meta svg {
+    color: #64748b;
+    flex-shrink: 0;
+    margin-right: 4px;
+}
+
+/* Verification Link Action Button */
+.cert-verify-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #2563eb;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: auto; /* Pushes the button to the bottom if cards have uneven text heights */
+    width: fit-content;
+    transition: color 150ms ease;
+}
+
+.cert-verify-btn:hover {
+    color: #1d4ed8;
+    /* text-decoration: underline; */
+}
+
+.cert-verify-btn svg {
+    flex-shrink: 0;
+    transition: transform 150ms ease;
+}
+
+.cert-verify-btn:hover svg {
+    transform: translate(1px, -1px); /* Subtly pops the external link icon outward on hover */
+}

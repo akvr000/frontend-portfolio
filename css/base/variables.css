@@ -6,7 +6,11 @@
   --primary-glow:   rgba(37, 99, 235, 0.18);
   /* --accent:         #06b6d4; */
   --accent: #eff6ff;
-
+  --black-to-blue : black;
+  
+;
+  --blue-to-white : var(--primary)
+;
 /* header */
   --bg-header: rgba(255, 255, 255, 0.8);
 
@@ -73,7 +77,9 @@
   --primary-dark:   #2563eb;
   --primary-light:  rgba(59,130,246,0.12);
   --primary-glow:   rgba(59,130,246,0.22);
-
+  
+  --black-to-blue : var(--primary);
+  --blue-to-white : white;
 /* header */
   --bg-header: rgba(13,17,23,0.8);
 
