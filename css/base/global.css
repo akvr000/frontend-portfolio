@@ -56,6 +56,13 @@ section:nth-child(even) {
     /* letter-spacing: 0.8px; */
 }
 
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+
 /* media queries */
 @media (max-width: 768px) {
     /* html {

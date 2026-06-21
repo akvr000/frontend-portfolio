@@ -47,7 +47,7 @@ icon.addEventListener('click',()=>{
         icon.innerHTML = sunIcon;
     }
     // Rotate animation
-    icon.style.rotate = '150deg';
+    icon.style.rotate = '90deg';
 
     setTimeout(() => {
         icon.style.rotate = '0deg';
