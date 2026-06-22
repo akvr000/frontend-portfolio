@@ -19,6 +19,9 @@
   gap: 20px;
 }
 
+.logo a{
+  color: var(--black-to-white);
+}
 .inner-navbar>ul {
   padding-top: 15px;
   display: flex;

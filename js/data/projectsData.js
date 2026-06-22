@@ -1,25 +1,32 @@
 const projectsData = [
     {
+        
         title: "Personal Portfolio Website",
-        desc: "A responsive and modern personal portfolio built to showcase my skills, projects, and frontend development journey using clean UI and smooth design.",
+        desc: "Built a modern personal portfolio website featuring a glassmorphism navigation bar, responsive layouts, smooth user interactions, project showcases, certifications, and a clean, user-friendly interface.",
         skills: ["HTML5", "CSS3", "JavaScript (ES6+)", "Bootstrap"],
         code: "https://github.com/akvr000/frontend-portfolio",
-        demo: "https://akvr000.github.io/frontend-portfolio/"
+        demo: "https://akvr000.github.io/frontend-portfolio/",
+        img: "assets/images/portfolio-preview.png", 
+        alt: "Portfolio mockup"
     },
     {
-        title: "SafeVault — Crypto Wallet SaaS Landing Page",
+        title: "SafeVault — Crypto Wallet SaaS Landing Page - Comming soon",
         desc: "Built a modern crypto-wallet SaaS landing page featuring responsive layouts, animated interactions with Framer Motion, pricing sections, and glassmorphism UI.",
         skills: ["React", "Tailwind CSS", "Framer Motion", "Glassmorphism UI", "Responsive Design"],
         code: "https://github.com",
-        demo: "https://example.com"
+        demo: "https://example.com",
+        img: "",
+         alt: "Safevault landing page mockup"
 
     },
     {
-        title: "CryptoPulse — Crypto Tracker & Journal",
+        title: "CryptoPulse — Crypto Tracker & Journal - Comming soon",
         desc: "A real-time crypto portfolio tracker and trading journal with live coin prices, performance charts, and personal trade notes powered by the CoinGecko API.",
         skills: ["React", "Tailwind CSS", "CoinGecko API", "Recharts", "Framer Motion"],
         code: "https://github.com",
-        demo: "https://example.com"
+        demo: "https://example.com",
+        img: "",
+        alt: "Dashboard view of CryptoPulse tracking application"
 
     }
 ];
@@ -41,6 +48,16 @@ const container = document.querySelector(".projects-grid");
 projectsData.forEach(item => {
     let article = document.createElement("article");
     article.className = "project-items";
+
+    let imgWrapper = document.createElement("div");
+    imgWrapper.className = "project-image-wrapper";
+
+    let img = document.createElement("img");
+    img.className = "project-img";
+    img.src = item.img;
+    img.alt = item.alt;
+
+    imgWrapper.appendChild(img);
 
     let h4 = document.createElement("h4");
     h4.textContent = item.title;
@@ -75,7 +92,7 @@ projectsData.forEach(item => {
 
     projectButtons.append(codeLink, demoLink);
 
-    article.append(h4, p, skillsDiv, projectButtons);
+    article.append(imgWrapper, h4, p, skillsDiv, projectButtons);
     container.appendChild(article);
 
 });

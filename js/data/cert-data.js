@@ -2,11 +2,20 @@ const certData = [
     {
         logo: "Meta",
         badge: "Frontend",
+        title: "Meta Full-Stack Developer Specialization",
+        issuer: "Meta (Coursera)",
+        issueDate: "In Progress", // Clear indicator
+        certId: null,             // No ID yet
+        verifyUrl: null           // No link yet
+    },
+    {
+        logo: "Meta",
+        badge: "Frontend",
         title: "Introduction to Front-End Development",
         issuer: "Meta (Coursera)",
         issueDate: "Apr 4, 2026",
         certId: "4REXHGJGTI9X",
-        verifyUrl: "https://coursera.org/verify/4REXHGJGTI9X " // Added link data
+        verifyUrl: "https://coursera.org/verify/4REXHGJGTI9X" // Added link data
     },
     {
         logo: "Meta",
@@ -15,7 +24,7 @@ const certData = [
         issuer: "Meta (Coursera)",
         issueDate: "May 9, 2026",
         certId: "C64DAJDDOC74",
-        verifyUrl: "https://coursera.org/verify/C64DAJDDOC74  " // Added link data
+        verifyUrl: "https://coursera.org/verify/C64DAJDDOC74" // Added link data
     },
     {
         logo: "Meta",
@@ -24,7 +33,7 @@ const certData = [
         issuer: "Meta (Coursera)",
         issueDate: "Apr 28, 2026",
         certId: "L2XIUP5W5KTH",
-        verifyUrl: "https://coursera.org/verify/L2XIUP5W5KTH " // Added link data
+        verifyUrl: "https://coursera.org/verify/L2XIUP5W5KTH" // Added link data
     },
     {
         logo: "Meta",
@@ -33,8 +42,19 @@ const certData = [
         issuer: "Meta (Coursera)",
         issueDate: "May 28, 2026",
         certId: "UYUQUVHL3YBR",
-        verifyUrl: "https://coursera.org/verify/UYUQUVHL3YBR  " // Added link data
+        verifyUrl: "https://coursera.org/verify/UYUQUVHL3YBR" // Added link data
+    },
+
+    {
+        logo: "EA",
+        badge: "Programming",
+        title: "Diploma in Programming (Grade: A+)",
+        issuer: "Expert Academy",
+        issueDate: "Nov, 2024",
+        certId: "150415019104",
+        verifyUrl: "https://drive.google.com/file/d/1jBDvRWz-vVUeFNXE-N-lvcZsX58wuWig/view?usp=sharing" // Added link data
     }
+
 
 ];
 
@@ -53,6 +73,9 @@ certData.forEach(card => {
     const certCard = document.createElement("article");
     certCard.className = "cert-card";
 
+    // [NEW] Check if this specific card is in progress
+    const isInProgress = card.issueDate === "In Progress";
+
     // 2. Build Header Element
     const certHeader = document.createElement("header");
     certHeader.className = "cert-header";
@@ -65,7 +88,6 @@ certData.forEach(card => {
     certBadge.className = "cert-badge";
     certBadge.textContent = card.badge;
 
-    // Append items one by one
     certHeader.appendChild(certLogo);
     certHeader.appendChild(certBadge);
 
@@ -81,28 +103,47 @@ certData.forEach(card => {
     // 4. Build Metadata / Date Rows
     const certMeta = document.createElement("div");
     certMeta.className = "cert-meta";
-    
-    // Set the SVG icon string first safely
     certMeta.innerHTML = certIcons.date; 
     
-    // Now create the text container wrap and append it cleanly
     const dateText = document.createElement("span");
-    dateText.innerHTML = `Issued <span class="cert-issue-date">${card.issueDate}</span>`;
+    // [NEW] If in progress, change the label from "Issued" to "Status" and add a class
+    if (isInProgress) {
+        dateText.innerHTML = `Status: <span class="cert-issue-date text-progress">${card.issueDate}</span>`;
+    } else {
+        dateText.innerHTML = `Issued <span class="cert-issue-date">${card.issueDate}</span>`;
+    }
     certMeta.appendChild(dateText);
 
     // 5. Build ID Wrapper Element
     const certIdWrapper = document.createElement("p");
     certIdWrapper.className = "cert-id-wrapper";
-    certIdWrapper.innerHTML = `ID: <span class="cert-id">${card.certId}</span>`;
+    // [NEW] Hide or change the ID text row if it's in progress
+    if (isInProgress) {
+        certIdWrapper.innerHTML = `ID: <span class="cert-id">Not Available Yet</span>`;
+        certIdWrapper.style.opacity = "0.5";
+    } else {
+        certIdWrapper.innerHTML = `ID: <span class="cert-id">${card.certId}</span>`;
+    }
 
-    // 6. Build the Action Anchor Link
-    const certVerifyBtn = document.createElement("a");
-    certVerifyBtn.className = "cert-verify-btn";
-    certVerifyBtn.href = card.verifyUrl;
-    certVerifyBtn.target = "_blank";
-    certVerifyBtn.rel = "noopener noreferrer";
-    // Inject the SVG icon string along with the button text label
-    certVerifyBtn.innerHTML = `${certIcons.verify} Verify Credential`;
+    // 6. Build the Action Anchor Link OR Status Badge
+    let certActionBlock; // Creating a generic block variable to hold either the <a> or a <span>
+    
+    if (isInProgress) {
+        // [NEW] Create a plain text status block instead of a clickable link
+        certActionBlock = document.createElement("span");
+        certActionBlock.className = "cert-verify-btn status-progress";
+        certActionBlock.style.color = "#64748b";
+        certActionBlock.style.cursor = "default";
+        certActionBlock.innerHTML = `<span class="pulse-dot"></span> Learning in Progress`;
+    } else {
+        // Build the normal verification link anchor tag
+        certActionBlock = document.createElement("a");
+        certActionBlock.className = "cert-verify-btn";
+        certActionBlock.href = card.verifyUrl;
+        certActionBlock.target = "_blank";
+        certActionBlock.rel = "noopener noreferrer";
+        certActionBlock.innerHTML = `${certIcons.verify} Verify Credential`;
+    }
 
     // 7. Assemble the complete Card Structure
     certCard.appendChild(certHeader);
@@ -110,7 +151,7 @@ certData.forEach(card => {
     certCard.appendChild(certIssuer);
     certCard.appendChild(certMeta);
     certCard.appendChild(certIdWrapper);
-    certCard.appendChild(certVerifyBtn);
+    certCard.appendChild(certActionBlock); 
 
     // 8. Inject the finished Card item right into the UI Grid layout
     certGrid.appendChild(certCard);

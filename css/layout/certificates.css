@@ -5,7 +5,7 @@
     gap: 24px;
     width: 100%;
     max-width: 1200px;
-    padding: 20px 15px;
+    padding: 20px 10px;
     margin: 0 auto;
 }
 
@@ -63,15 +63,12 @@
     font-weight: 600;
     padding: 6px 14px;
     border-radius: 20px;
-    /* border: 1px solid #dbeafe; */
-    /* outline: 1px solid #dbeafe; */
     outline: 1px solid var(--custom-bg);
 }
 
 /* Core Content Typography */
 .cert-title {
-    /* color: #0f172a; */
-    color: var(--black-to-blue);
+    color: var(--black-to-white);
     font-size: 1.15rem;
     font-weight: 600;
     line-height: 1.4;
@@ -79,8 +76,7 @@
 }
 
 .cert-issuer {
-    /* color: #2563eb; */
-    color: var(--blue-to-white);
+    color: var(--primary);
     font-size: 0.95rem;
     font-weight: 500;
     margin: 0 0 16px 0;
@@ -124,7 +120,7 @@
     font-size: 0.9rem;
     font-weight: 600;
     text-decoration: none;
-    margin-top: auto; /* Pushes the button to the bottom if cards have uneven text heights */
+    margin-top: auto;
     width: fit-content;
     transition: color 150ms ease;
 }
@@ -140,5 +136,37 @@
 }
 
 .cert-verify-btn:hover svg {
-    transform: translate(1px, -1px); /* Subtly pops the external link icon outward on hover */
+    transform: translate(1px, -1px); 
+}
+
+
+.cert-issue-date.text-progress {
+    /* color: #ea580c; */
+    color: #05df72;
+    font-weight: 600;
+}
+
+
+.pulse-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 6px;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0% { transform: scale(0.9); opacity: 0.6; }
+    50% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(0.9); opacity: 0.6; }
+}
+
+
+
+@media (max-width: 700px) {
+    .certificates-grid> article {
+
+        margin: 5px; 
+    }
 }

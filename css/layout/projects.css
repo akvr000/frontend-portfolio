@@ -5,62 +5,76 @@
     justify-content: center;
     gap: 25px;
     flex-wrap: wrap;
-    padding: 12px 15px;
+    padding: 12px 10px;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    
 }
 
-.projects-grid>article {
+.projects-grid > article {
     flex: 1 1 340px;
-    padding: 20px 25px;
+    padding: 0; 
     border-radius: var(--radius-md);
     background-color: var(--bg);
     outline: var(--border);
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column;
     transition: transform 300ms ease-in-out, box-shadow 300ms ease-in-out, outline 300ms ease-in-out;
+}
+
+
+.projects-grid article h4 {
+    margin-top: 20px;
+    padding: 0 25px;
+    transition: color 300ms ease-in-out;
+}
+
+.projects-grid article:hover h4 {
+    color: var(--custom-bg);
 }
 
 .projects-grid article p {
     color: var(--text-light);
+    padding: 0 25px;
+    margin-bottom: 15px;
 }
 
-article:hover h4{
-    color: var(--custom-bg);
+.projects-skills-buttons {
+    padding: 0 25px 15px 25px;
 }
 
-.projects-grid article:hover {
-    outline: 1px solid var(--primary);
-    box-shadow: var(--shadow-hover);
-    transform: scale(1.03);
-    cursor: pointer;
-    /* color: var(--primary); */
+.project-buttons {
+    padding: 0 25px 20px 25px;
+    margin-top: auto; 
 }
 
+/* --- Image Controls --- */
+
+.project-image-wrapper {
+    width: 100%;
+    height: 180px;
+    overflow: hidden; 
+    background-color: #f1f5f9;
+    margin: 0;
+    padding: 0;
+}
+
+.project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+    transition: transform 400ms ease-in-out;
+}
+
+.projects-grid article:hover .project-img {
+    transform: scale(1.05);
+}
 
 /* ---------- media queries ------------ */
 
-
-
-/* @media (max-width: 700px) {
-
-    Projects
-    .projects-grid {
-        flex-direction: column;
-        align-items: center;
-        padding: 15px 10px;
-
-    }
-
-    .projects-grid>article {
-        flex: 1 1 100%;
-        margin: 0px 20px;
-    }
-
-} */
-
 @media (max-width: 700px) {
-
     /* Projects */
     .projects-grid {
         flex-direction: column;
@@ -69,9 +83,8 @@ article:hover h4{
     }
 
     .projects-grid > article {
-        flex: 1 1 100%;
-        /* width: 100%;           */
-        /* max-width: 450px;      */
-        margin: 0px 20px;           
+        flex: 1 1 95%;
+        width: 95%;
+        margin: 0; 
     }
 }

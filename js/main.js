@@ -2,9 +2,9 @@ import "./typing-effect.js";
 import "./theme.js";
 import "./back-to-top.js";
 import "./hamburger.js";
-import "./skillsData.js";
-import"./cert-data.js";
-import "./projectsData.js";
+import "./data/skillsData.js";
+import"./data/projectsData.js";
+import "./data/cert-data.js";
 
 
 

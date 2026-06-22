@@ -9,7 +9,7 @@
 /* hero section buttons */
 
 .hero-buttons {
-    margin-top: 20px;
+    margin-top: var(--space-base);
     display: flex;
 }
 
@@ -21,9 +21,9 @@
 }
 
 .download-cv {
-    margin-left: 50px;
+    margin-left: var(--space-lg);
     width: max-content;
-    min-width: 120px
+    min-width: 120px;
 }
 
 .download-cv,
@@ -107,6 +107,6 @@
 /* media queries */
 @media (max-width: 768px) {
     .download-cv {
-        margin-left: 45px;
+        margin-left: var(--space-lg);
     }
 }

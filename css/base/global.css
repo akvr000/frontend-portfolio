@@ -53,22 +53,20 @@ section:nth-child(even) {
     color: var(--text-secondary);
     font-size: 1rem;
     margin-top: 8px;
-    /* letter-spacing: 0.8px; */
+
+}
+
+ul{
+    list-style-type: none;
 }
 
 a{
     text-decoration: none;
 }
-ul{
-    list-style-type: none;
-}
+
 
 /* media queries */
 @media (max-width: 768px) {
-    /* html {
-        font-size: 1rem;
-    }
-     */
     h1,
     h1>span {
         font-size: 1.5rem;
@@ -78,13 +76,6 @@ ul{
     h3 {
         font-size: 1.3rem;
     }
-
-    p{
-        font-size: 1rem;
-    }
-    /* section{
-        padding: 20px 0px;
-    } */
 
     .section-label {
         margin: 0px 20px;
