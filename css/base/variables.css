@@ -5,7 +5,7 @@
   --primary-light:  #eff6ff;
   --primary-glow:   #2563eb2e;
   /* --accent:         #06b6d4; */
-  --accent: #eff6ff;
+  --accent: #ccdbfa86;
   /* custom color */
   --black-to-white : var(--black);
   --black-to-blue : black;
@@ -76,6 +76,7 @@
   --primary-dark:   #2563eb;
   --primary-light:  rgba(59,130,246,0.12);
   --primary-glow:   rgba(59,130,246,0.22);
+  --accent: #eff6ff;
   /* custom colors */
   --black-to-blue : var(--primary);
   --black-to-white : white;
