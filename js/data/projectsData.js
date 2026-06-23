@@ -10,13 +10,13 @@ const projectsData = [
         alt: "Portfolio mockup"
     },
     {
-        title: "SafeVault — Crypto Wallet SaaS Landing Page - Comming soon",
-        desc: "Built a modern crypto-wallet SaaS landing page featuring responsive layouts, animated interactions with Framer Motion, pricing sections, and glassmorphism UI.",
-        skills: ["React", "Tailwind CSS", "Framer Motion", "Glassmorphism UI", "Responsive Design"],
-        code: "https://github.com",
-        demo: "https://example.com",
-        img: "",
-         alt: "Safevault landing page mockup"
+        title: "SafeVault — Crypto Wallet SaaS Landing Page",
+        desc: "Built a premium crypto landing page featuring modular architecture, an interactive pricing engine, and glassmorphic UI elements. Uses native, hardware-accelerated CSS animations to ensure completely fluid, stutter-free mobile navigation.",
+        skills: ["React", "CSS Modules", "Responsive Design", "UI/UX", "Web3 UI"],
+        code: "https://github.com/akvr000/safevault-landing-page",
+        demo: "https://safevault-landing-page.vercel.app/",
+        img: "assets/images/safevault-preview.png",
+        alt: "Safevault landing page mockup"
 
     },
     {
