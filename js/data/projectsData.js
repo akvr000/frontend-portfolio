@@ -6,7 +6,7 @@ const projectsData = [
         skills: ["HTML5", "CSS3", "JavaScript (ES6+)", "Bootstrap"],
         code: "https://github.com/akvr000/frontend-portfolio",
         demo: "https://akvr000.github.io/frontend-portfolio/",
-        img: "assets/images/portfolio-preview.png", 
+        img: "assets/images/portfolio-preview.webp", 
         alt: "Portfolio mockup"
     },
     {
@@ -15,7 +15,7 @@ const projectsData = [
         skills: ["React", "CSS Modules", "Responsive Design", "UI/UX", "Web3 UI"],
         code: "https://github.com/akvr000/safevault-landing-page",
         demo: "https://safevault-landing-page.vercel.app/",
-        img: "assets/images/safevault-preview.png",
+        img: "assets/images/safevault-preview.webp",
         alt: "Safevault landing page mockup"
 
     },
@@ -56,6 +56,7 @@ projectsData.forEach(item => {
     img.className = "project-img";
     img.src = item.img;
     img.alt = item.alt;
+    img.loading = "lazy";
 
     imgWrapper.appendChild(img);
 

@@ -8,7 +8,7 @@ const skillsData = [
     },
     {
         category: "Tools & Workflow",
-        skill: ["Git", "GitHub", "VS Code", "Figma", "Chrome DevTools", "Netlify", "WebForms"]
+        skill: ["Git", "GitHub", "VS Code", "Vercel", "Chrome DevTools", "Netlify", "WebForms"]
     },
     {
         category: "Others",

@@ -1,23 +1,11 @@
-// added back to top button functionality
+// // added back to top button functionality
 
-const topButton = document.getElementById("back-to-top");
+const topButton = document.querySelector("#back-to-top");
 
-function handleScroll() {
-  if (window.scrollY > 60) {
-    topButton.classList.add("show");
-  } else {
-    topButton.classList.remove("show");
-  }
-}
-
-// Run on load to set correct initial state
-handleScroll();
-
-window.addEventListener("scroll", handleScroll);
+window.addEventListener("scroll", () => {
+  topButton.classList.toggle("show", window.scrollY > 60);
+});
 
 topButton.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
-});
+  window.scrollTo({ top: 0, behavior: "smooth" });
+})
