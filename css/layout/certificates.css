@@ -64,7 +64,7 @@
     font-weight: 600;
     padding: 6px 14px;
     border-radius: 20px;
-    outline: 1px solid var(--custom-bg);
+    outline: 1px solid var(--outline);
 }
 
 /* Core Content Typography */

@@ -11,7 +11,7 @@
     margin: 0 auto;
 }
 
-.projects-grid > article {
+/* .projects-grid > article {
     flex: 1 1 340px;
     padding: 0; 
     border-radius: var(--radius-md);
@@ -21,20 +21,46 @@
     display: flex;
     flex-direction: column;
     transition: transform 300ms ease-in-out, box-shadow 300ms ease-in-out, outline 300ms ease-in-out;
+} */
+
+.projects-grid>article {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
 }
 
+.projects-grid>article:nth-child(even) .image-wrapper {
+    order: 2;
+}
 
-.projects-grid article h4 {
+.projects-grid>article:nth-child(even) .content {
+    order: 1;
+}
+
+.content,
+.image-wrapper {
+    flex: 1;
+}
+
+.content h5 {
+    margin-top: 20px;
+    font-weight: 300;
+    color: var(--primary);
+    margin-left: 24px;
+}
+
+.content h4 {
     margin-top: 20px;
     padding: 0 25px;
     transition: color 300ms ease-in-out;
 }
 
-.projects-grid article:hover h4 {
+.content:hover h4 {
     color: var(--custom-bg);
 }
 
-.projects-grid article p {
+.content p {
     color: var(--text-light);
     padding: 0 25px;
     margin-bottom: 15px;
@@ -46,45 +72,56 @@
 
 .project-buttons {
     padding: 0 25px 20px 25px;
-    margin-top: auto; 
+    margin-top: auto;
 }
 
 /* --- Image Controls --- */
 
-.project-image-wrapper {
+.image-wrapper {
     width: 100%;
-    height: 180px;
-    overflow: hidden; 
-    background-color: #f1f5f9;
-    margin: 0;
-    padding: 0;
+    height: 300px;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    /* outline: var(--border); */
+    background: #eef1f6;
+    border: none;
+    outline: 1px solid rgba(111, 110, 110, 0.059);
+    /* aspect-ratio: 16 / 10; */
 }
 
 .project-img {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: cover;
     display: block;
     transition: transform 400ms ease-in-out;
 }
 
 .projects-grid article:hover .project-img {
-    transform: scale(1.05);
+    transform: scale(1.04);
 }
 
 /* ---------- media queries ------------ */
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
+
     /* Projects */
-    .projects-grid {
+    /* .projects-grid {
         flex-direction: column;
-        align-items: center;  
-        padding: 15px 10px;  
+        align-items: center;
+        padding: 15px 10px;
+    } */
+
+    .projects-grid>article {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        gap: 12px;
     }
 
-    .projects-grid > article {
-        flex: 1 1 95%;
-        width: 95%;
-        margin: 0; 
+    .projects-grid>article:nth-child(even) .image-wrapper,
+    .projects-grid>article:nth-child(even) .content {
+        order: initial;
     }
+
 }

@@ -40,6 +40,7 @@
   --input-bg:       #f8fafc;
   --input-border:   1px solid #2563eb;
   --input-outline:  0 0 0 3px #2563eb26;
+  --outline : rgba(107, 107, 107, 0.217);
 
   /* Buttons */
   --button-bg:      #0f172a;
@@ -106,6 +107,7 @@
   --input-bg:       #21293a;
   --input-border:   1px solid #3b82f6;
   --input-outline:  0 0 0 3px rgba(59,130,246,0.2);
+  --outline:var(--primary);
 
   --button-bg:      #f0f6fc;
   --button-border:  1px solid #f0f6fc;

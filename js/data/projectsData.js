@@ -1,15 +1,16 @@
 const projectsData = [
     {
-
+        label: "01 — Web app",
         title: "Personal Portfolio Website",
         desc: "Built a modern personal portfolio website featuring a glassmorphism navigation bar, responsive layouts, smooth user interactions, project showcases, certifications, and a clean, user-friendly interface.",
         skills: ["HTML5", "CSS3", "JavaScript (ES6+)", "Bootstrap"],
         code: "https://github.com/akvr000/frontend-portfolio",
         demo: "https://akvr000.github.io/frontend-portfolio/",
-        img: "assets/images/portfolio-preview.webp",
+        img: "assets/images/portfolio-preview.png",
         alt: "Portfolio mockup"
     },
     {
+        label: "02 — SaaS landing page",
         title: "SafeVault — Crypto Wallet SaaS Landing Page",
         desc: "Built a premium crypto landing page featuring modular architecture, an interactive pricing engine, and glassmorphic UI elements. Uses native, hardware-accelerated CSS animations to ensure completely fluid, stutter-free mobile navigation.",
         skills: ["React", "CSS Modules", "Responsive Design", "UI/UX", "Web3 UI"],
@@ -20,6 +21,7 @@ const projectsData = [
 
     },
     {
+        label: "03 — Productivity app",
         title: "Tick — Task Manager",
         desc: "A modern task management application that helps users organize, prioritize, and track daily tasks with a clean interface, responsive design, and an intuitive user experience.",
         skills: ["React", "Tailwind CSS", "JavaScript", "Local Storage", "Vite"],
@@ -53,56 +55,79 @@ const icons = [
 ]
 
 const container = document.querySelector(".projects-grid");
-
 projectsData.forEach(item => {
     let article = document.createElement("article");
-    article.className = "project-items";
+    article.innerHTML = `
+        <div class="image-wrapper">
+            <img src=${item.img} alt =${item.alt} class="project-img"/>
+        </div>
+        <div class="content">
+            <h5>${item.label}</h5>
+            <h4>${item.title}</h4>
+            <p>${item.desc}</p>
+            <div class="projects-skills-buttons">
+            ${item.skills
+            .map(skill => `<span>${skill}</span>`)
+            .join("")}
+            </div>
+            <div class="project-buttons">
+                <a href=${item.code} rel="noopener noreferrer" class="code" target="_blank>${icons[0].gitIcon} Code</a>
+                <a href=${item.demo} rel="noopener noreferrer" class="demo" target="_blank>${icons[0].demoIcon} Demo</a>
+            </div>
+        </div>
+    `
+    container.append(article);
+})
 
-    let imgWrapper = document.createElement("div");
-    imgWrapper.className = "project-image-wrapper";
+// projectsData.forEach(item => {
+//     let article = document.createElement("article");
+//     article.className = "project-items";
 
-    let img = document.createElement("img");
-    img.className = "project-img";
-    img.src = item.img;
-    img.alt = item.alt;
-    img.loading = "lazy";
+//     let imgWrapper = document.createElement("div");
+//     imgWrapper.className = "project-image-wrapper";
 
-    imgWrapper.appendChild(img);
+//     let img = document.createElement("img");
+//     img.className = "project-img";
+//     img.src = item.img;
+//     img.alt = item.alt;
+//     img.loading = "lazy";
 
-    let h4 = document.createElement("h4");
-    h4.textContent = item.title;
-    let p = document.createElement("p");
-    p.textContent = item.desc;
+//     imgWrapper.appendChild(img);
 
-    let skillsDiv = document.createElement("div");
-    skillsDiv.className = "projects-skills-buttons";
+//     let h4 = document.createElement("h4");
+//     h4.textContent = item.title;
+//     let p = document.createElement("p");
+//     p.textContent = item.desc;
 
-    item.skills.forEach(i => {
-        let span = document.createElement("span");
-        span.textContent = i;
-        skillsDiv.append(span);
-    })
+//     let skillsDiv = document.createElement("div");
+//     skillsDiv.className = "projects-skills-buttons";
 
-    let projectButtons = document.createElement("div");
-    projectButtons.className = "project-buttons";
+//     item.skills.forEach(i => {
+//         let span = document.createElement("span");
+//         span.textContent = i;
+//         skillsDiv.append(span);
+//     })
 
-    let codeLink = document.createElement("a");
-    codeLink.href = item.code;
-    codeLink.rel = "noopener noreferrer";
-    codeLink.className = "code";
-    codeLink.target = "_blank";
-    codeLink.innerHTML = `${icons[0].gitIcon} Code`;
+//     let projectButtons = document.createElement("div");
+//     projectButtons.className = "project-buttons";
 
-    let demoLink = document.createElement("a");
-    demoLink.href = item.demo;
-    demoLink.rel = "noopener noreferrer";
-    demoLink.className = "demo";
-    demoLink.target = "_blank";
-    demoLink.innerHTML = `${icons[0].demoIcon} Demo`;
+//     let codeLink = document.createElement("a");
+//     codeLink.href = item.code;
+//     codeLink.rel = "noopener noreferrer";
+//     codeLink.className = "code";
+//     codeLink.target = "_blank";
+//     codeLink.innerHTML = `${icons[0].gitIcon} Code`;
 
-    projectButtons.append(codeLink, demoLink);
+//     let demoLink = document.createElement("a");
+//     demoLink.href = item.demo;
+//     demoLink.rel = "noopener noreferrer";
+//     demoLink.className = "demo";
+//     demoLink.target = "_blank";
+//     demoLink.innerHTML = `${icons[0].demoIcon} Demo`;
 
-    article.append(imgWrapper, h4, p, skillsDiv, projectButtons);
-    container.appendChild(article);
+//     projectButtons.append(codeLink, demoLink);
 
-});
+//     article.append(imgWrapper, h4, p, skillsDiv, projectButtons);
+//     container.appendChild(article);
+
+// });
