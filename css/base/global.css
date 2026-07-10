@@ -23,9 +23,9 @@ h2 {
     font-weight: 600;
 }
 
-h3{
-       font-size: 1.25rem;
-    color: var(--custom-bg); 
+h3 {
+    font-size: 1.25rem;
+    color: var(--custom-bg);
     font-weight: 600;
 }
 
@@ -37,7 +37,7 @@ h4 {
 h5 {
     font-size: 0.875rem;
     font-weight: 600;
-} 
+}
 
 section {
     scroll-margin-top: 60px;
@@ -46,7 +46,7 @@ section {
 }
 
 section:nth-child(even) {
-     background-color: var(--section-bg);
+    background-color: var(--section-bg);
 }
 
 .section-label {
@@ -54,34 +54,45 @@ section:nth-child(even) {
     text-align: center;
 }
 
-.section-label p{
+.section-label p {
     color: var(--text-secondary);
     font-size: 1rem;
     margin-top: 8px;
 
 }
 
-ul{
+ul {
     list-style-type: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all .8s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 /* media queries */
 @media (max-width: 768px) {
+
     h1,
     h1>span {
         font-size: 1.5rem;
-        
+
     }
 
     h2,
     h3 {
         font-size: 1.3rem;
-        
+
     }
 
     .section-label {
@@ -90,4 +101,4 @@ a{
     }
 
 
-} 
+}

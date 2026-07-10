@@ -5,6 +5,7 @@ import "./hamburger.js";
 import "./data/skillsData.js";
 import"./data/projectsData.js";
 import "./data/cert-data.js";
+import "./scrollReveal.js";
 
 
 

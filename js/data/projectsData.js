@@ -1,12 +1,12 @@
 const projectsData = [
     {
-        
+
         title: "Personal Portfolio Website",
         desc: "Built a modern personal portfolio website featuring a glassmorphism navigation bar, responsive layouts, smooth user interactions, project showcases, certifications, and a clean, user-friendly interface.",
         skills: ["HTML5", "CSS3", "JavaScript (ES6+)", "Bootstrap"],
         code: "https://github.com/akvr000/frontend-portfolio",
         demo: "https://akvr000.github.io/frontend-portfolio/",
-        img: "assets/images/portfolio-preview.webp", 
+        img: "assets/images/portfolio-preview.webp",
         alt: "Portfolio mockup"
     },
     {
@@ -20,15 +20,24 @@ const projectsData = [
 
     },
     {
-        title: "CryptoPulse — Crypto Tracker & Journal - Comming soon",
-        desc: "A real-time crypto portfolio tracker and trading journal with live coin prices, performance charts, and personal trade notes powered by the CoinGecko API.",
-        skills: ["React", "Tailwind CSS", "CoinGecko API", "Recharts", "Framer Motion"],
-        code: "https://github.com",
-        demo: "https://example.com",
-        img: "",
-        alt: "Dashboard view of CryptoPulse tracking application"
-
+        title: "Tick — Task Manager",
+        desc: "A modern task management application that helps users organize, prioritize, and track daily tasks with a clean interface, responsive design, and an intuitive user experience.",
+        skills: ["React", "Tailwind CSS", "JavaScript", "Local Storage", "Vite"],
+        code: "https://github.com/akvr000/tick-task-manager",
+        demo: "https://tick-task-manager.vercel.app/",
+        img: "assets/images/tick-preview.webp",
+        alt: "Dashboard view of the Tick task management application"
     }
+    // {
+    //     title: "CryptoPulse — Crypto Tracker & Journal - Comming soon",
+    //     desc: "A real-time crypto portfolio tracker and trading journal with live coin prices, performance charts, and personal trade notes powered by the CoinGecko API.",
+    //     skills: ["React", "Tailwind CSS", "CoinGecko API", "Recharts", "Framer Motion"],
+    //     code: "https://github.com",
+    //     demo: "https://example.com",
+    //     img: "",
+    //     alt: "Dashboard view of CryptoPulse tracking application"
+
+    // }
 ];
 
 const icons = [
