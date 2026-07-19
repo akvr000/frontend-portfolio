@@ -22,12 +22,14 @@
     outline: var(--skill-span-outline);
     gap: 1rem;
     transition: box-shadow 300ms ease-in-out, transform 300ms ease-in-out;
+    transition: background-color 200ms ease-in-out;
 }
 
 .skill-category:hover {
-    outline: 1px solid var(--primary);
-    /* transform: translateY(-5px); */
-    transform: scale(1.03);
+    /* outline: 1px solid var(--primary); */
+    outline: 1px solid #2564ebcc;
+    transform: translateY(-5px);
+    /* transform: scale(1.03); */
     box-shadow: var(--shadow-hover);
     cursor: pointer;
 }
@@ -53,6 +55,7 @@
     background-color: var(--bg-100);
     outline: var(--skill-span-outline);
     border: var(--border);
+    transition: background-color 200ms ease-in-out outline 200ms ease-in-out;
 
 }
 

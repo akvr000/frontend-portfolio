@@ -15,15 +15,15 @@
 }
 
 /* Hamburger Animation */
-.hamburger span.show:nth-child(1) {
+.hamburger.show span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 6px);
 }
 
-.hamburger span.show:nth-child(2) {
+.hamburger.show span:nth-child(2) {
   opacity: 0;
 }
 
-.hamburger span.show:nth-child(3) {
+.hamburger.show span:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -6px);
 }
 

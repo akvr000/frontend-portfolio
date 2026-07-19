@@ -9,6 +9,7 @@ body {
     background: var(--bg);
     color: var(--text-main);
     line-height: 1.5;
+    transition: background 200ms ease-in-out;
 }
 
 h1,
@@ -47,6 +48,7 @@ section {
 
 section:nth-child(even) {
     background-color: var(--section-bg);
+    transition: background-color 200ms ease-in-out;
 }
 
 .section-label {
